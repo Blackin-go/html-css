@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela dois</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        table {
+            text-align: center;
+        }
+
+        td {
+            background-color: #999999;
+            border: 1px solid black;
+            width: 50px;
+
+        }
+
+        td.destaque {
+            background-color: aquamarine;
+            color: #080808;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="destaque" colspan="4">1</td>
+            <td class="destaque" rowspan="4">2</td>
+        </tr>
+        <tr>
+            <td class="destaque" rowspan="4">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td class="destaque" colspan="4">13</td>
+        </tr>
+    </table>
+</body>
+</html>

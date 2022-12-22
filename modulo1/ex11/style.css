@@ -1,0 +1,62 @@
+@charset "UTF_8";
+
+#titulo-principal {
+    background-color: aqua;
+    color: rgb(5, 16, 112);
+    height: 120px;
+    width: 300px;
+}
+
+.topico {
+    background-color: green;
+    color: white;
+    height: 120px;
+    width: 300px;
+    text-align: right;
+}
+
+.texto {
+    background-color: blueviolet;
+    color: white;
+    text-align: justify;
+    height: 120px;
+    width: 350px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pseudo:visited {
+    color: chocolate;
+
+}
+
+.pseudo:hover {
+    background-color: rgb(3, 3, 3);
+    color: rgb(161, 197, 252);
+    text-decoration: none;
+}
+
+.pseudo::before {
+    content: "<<";
+    font-weight: lighter;
+}
+
+.pseudo::after {
+    content: ">>";
+    font-weight: lighter;
+}
+
+.div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    background-color: yellow;
+}

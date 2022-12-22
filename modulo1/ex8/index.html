@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis, Audio e Video</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Abaixo, vamos inserir três imagens com tamanhos do maior ao menor, e elas apareceram em cada dispositio conforme o tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/imagem300.jpg" type="image/jpg">
+        <source media="(max-width: 1130px)" srcset="imagens/imagem100.jpg" type="image/jng">
+        <img src="imagens/imagem1300.jpg" alt="Universo G">
+    </picture>
+    <p>a partir dessas configurações, serão carregadas imagens conforme o tamanho da tela, a imagem padrão está dentro de img enquanto as demais, conforme a tela diminui, serão adicionadas logo em segquência em source, não se deve inverter essa ordem, sempre da menor para a maior</p>
+    <br>
+
+    <h2>Audio</h2>
+    <audio preload="none" controls>
+        <source src="audios/midia.mp3" type="audio/mpeg">
+        <source src="audios/midia.ogg" type="audio/ogg">
+        <source src="audios/midia.wav" type="audio/wav">
+    </audio>
+    <p>caso seu navegador não suporte o áudio <a href="audios/midia.mp3" target="_blank" rel="external" download="audios/midia.mp3" type="audio/mpeg">baixá-lo aqui.</a></p>
+    <h2>Video</h2>
+
+    <video width="600px" poster="Imagemcapa.png">
+        <source src="video.web" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.org" type="video/ogg">
+    </video>
+    <h2>adicionando video atraves do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4-8mHKULo_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

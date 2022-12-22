@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando colunas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th, tr, td {
+            text-align: center;
+            border: 1px solid black;
+            width: 90px;
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+            color: white;
+        }
+
+        tfoot > tr > th {
+            background-color: gray;
+            color: white;
+        }
+
+        .meio {
+            background-color: aquamarine;
+        }
+
+        .nome, .prof {
+            background-color: rgb(43, 153, 156);
+        }
+
+        .azul {
+            background-color: rgb(4, 40, 202);
+        }
+
+        .verde {
+            background-color: rgb(0, 177, 15);          
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando colunas de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="meio" span="2">
+            <col class="prof">
+            <col class="azul">
+            <col class="verde">
+            <col>
+        </colgroup>
+        <caption>Tabela de clientes</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+            <tr>
+                <td>nome</td>
+                <td>sexo</td>
+                <td>idade</td>
+                <td>profissao</td>
+                <td>cidade</td>
+                <td>estado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="5">Total de clientes</th>
+                <td>7(sete)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

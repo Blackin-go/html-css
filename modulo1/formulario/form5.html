@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio buttom</title>
+</head>
+<style>
+    div {
+        padding-top: 10px;
+    }
+</style>
+<body>
+
+    <h1>Checkbox e Radio Ruttom</h1>
+
+    <form action="test.html" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="name" id="" value="M"><label for="isexmas">Masculino</label>
+            <input type="radio" name="name" id="isexfe" value="F"><label for="isexfe">Feminino</label>
+            <input type="radio" name="name" id="iindef" value="Indef"><label for="iindef">Indefinido</label>
+            <input type="radio" name="name" id="inone" value="None"><label for="inone">Prefiro não falar</label>
+            <input type="radio" name="name" id="icri"><label for="icri">Criança</label>
+            <!-- No caso do input:radio, colocaremos o mesmo name para todos os inputs, pois ele é um botão de apenas uma opção -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="esfu" id="iesfu" checked ><label for="iesfu" >Futebol</label><br> 
+            <input type="checkbox" name="este" id="ieste"><label for="ieste">Tênis</label><br>
+            <input type="checkbox" name="esco" id="iesco"><label for="iesco">Corrida</label><br>
+            <input type="checkbox" name="esba" id="iesba"><label for="iesba">Basquete</label><br>
+            <input type="checkbox" name="esti" id="iesti"><label for="iesti">Tiro ao alvo</label><br>
+            <input type="checkbox" name="esta" id="iesta"><label for="iesta">Taco</label>
+        </fieldset>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+    </form>
+</body>
+</html>

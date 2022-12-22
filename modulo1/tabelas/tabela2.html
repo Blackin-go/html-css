@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela dois</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            height: 120px;
+        }
+
+        td {
+            border: 1px solid  rgb(165, 165, 165);
+            height: 20px;
+            width: 300px;
+            padding: 5px;
+        }
+
+        th {
+            background-color: #6d6d6d;
+            color: white;
+        }
+
+        .numero {
+            width: 200px;
+        }
+        td.numero {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: aquamarine;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #6d6d6d;
+        }
+
+        tbody > tr:nth-child(odd) /* odd significa impar, even significa par*/{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes, Hierarquia</h1>
+    <table>
+        <caption style="background-color: rgb(117, 117, 117); color: aliceblue; height: 20px; border: 1px solid white;">Tabela do tamanho da população</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 20px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">1.0000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="numero">200.587.987</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="numero">Números</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem architecto iusto sapiente. Architecto, veritatis? Tempora quidem quia nesciunt reprehenderit! Provident omnis ea assumenda praesentium suscipit corrupti iste nemo repellat accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ipsa nam aut earum ut laborum. Voluptatibus error cupiditate perspiciatis reiciendis commodi ipsum quas nam eaque, est veritatis culpa voluptas quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque maiores ut et harum rerum deserunt nobis cupiditate, non quia in vitae at praesentium sint commodi quae nam aspernatur quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eius cum voluptatum quidem similique, quas corporis. Ut voluptates repellendus nam, perferendis adipisci, veniam a doloremque dolorem, beatae dolores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam corrupti consequuntur cumque, voluptatibus maiores velit illo magnam, aliquam laboriosam voluptas. Ullam quo quaerat animi reprehenderit minima corporis enim cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus in quas itaque ducimus suscipit tenetur minus pariatur inventore rerum. Doloremque consectetur, aliquam velit enim sunt libero vero inventore porro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus nulla debitis explicabo exercitationem optio itaque distinctio praesentium cumque, dolorem necessitatibus tenetur beatae dolorum soluta est velit, unde cupiditate sunt?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem architecto iusto sapiente. Architecto, veritatis? Tempora quidem quia nesciunt reprehenderit! Provident omnis ea assumenda praesentium suscipit corrupti iste nemo repellat accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ipsa nam aut earum ut laborum. Voluptatibus error cupiditate perspiciatis reiciendis commodi ipsum quas nam eaque, est veritatis culpa voluptas quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque maiores ut et harum rerum deserunt nobis cupiditate, non quia in vitae at praesentium sint commodi quae nam aspernatur quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eius cum voluptatum quidem similique, quas corporis. Ut voluptates repellendus nam, perferendis adipisci, veniam a doloremque dolorem, beatae dolores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam corrupti consequuntur cumque, voluptatibus maiores velit illo magnam, aliquam laboriosam voluptas. Ullam quo quaerat animi reprehenderit minima corporis enim cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus in quas itaque ducimus suscipit tenetur minus pariatur inventore rerum. Doloremque consectetur, aliquam velit enim sunt libero vero inventore porro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus nulla debitis explicabo exercitationem optio itaque distinctio praesentium cumque, dolorem necessitatibus tenetur beatae dolorum soluta est velit, unde cupiditate sunt?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem architecto iusto sapiente. Architecto, veritatis? Tempora quidem quia nesciunt reprehenderit! Provident omnis ea assumenda praesentium suscipit corrupti iste nemo repellat accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ipsa nam aut earum ut laborum. Voluptatibus error cupiditate perspiciatis reiciendis commodi ipsum quas nam eaque, est veritatis culpa voluptas quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque maiores ut et harum rerum deserunt nobis cupiditate, non quia in vitae at praesentium sint commodi quae nam aspernatur quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eius cum voluptatum quidem similique, quas corporis. Ut voluptates repellendus nam, perferendis adipisci, veniam a doloremque dolorem, beatae dolores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam corrupti consequuntur cumque, voluptatibus maiores velit illo magnam, aliquam laboriosam voluptas. Ullam quo quaerat animi reprehenderit minima corporis enim cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus in quas itaque ducimus suscipit tenetur minus pariatur inventore rerum. Doloremque consectetur, aliquam velit enim sunt libero vero inventore porro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus nulla debitis explicabo exercitationem optio itaque distinctio praesentium cumque, dolorem necessitatibus tenetur beatae dolorum soluta est velit, unde cupiditate sunt?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem architecto iusto sapiente. Architecto, veritatis? Tempora quidem quia nesciunt reprehenderit! Provident omnis ea assumenda praesentium suscipit corrupti iste nemo repellat accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ipsa nam aut earum ut laborum. Voluptatibus error cupiditate perspiciatis reiciendis commodi ipsum quas nam eaque, est veritatis culpa voluptas quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque maiores ut et harum rerum deserunt nobis cupiditate, non quia in vitae at praesentium sint commodi quae nam aspernatur quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eius cum voluptatum quidem similique, quas corporis. Ut voluptates repellendus nam, perferendis adipisci, veniam a doloremque dolorem, beatae dolores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam corrupti consequuntur cumque, voluptatibus maiores velit illo magnam, aliquam laboriosam voluptas. Ullam quo quaerat animi reprehenderit minima corporis enim cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus in quas itaque ducimus suscipit tenetur minus pariatur inventore rerum. Doloremque consectetur, aliquam velit enim sunt libero vero inventore porro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus nulla debitis explicabo exercitationem optio itaque distinctio praesentium cumque, dolorem necessitatibus tenetur beatae dolorum soluta est velit, unde cupiditate sunt?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem architecto iusto sapiente. Architecto, veritatis? Tempora quidem quia nesciunt reprehenderit! Provident omnis ea assumenda praesentium suscipit corrupti iste nemo repellat accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ipsa nam aut earum ut laborum. Voluptatibus error cupiditate perspiciatis reiciendis commodi ipsum quas nam eaque, est veritatis culpa voluptas quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eaque maiores ut et harum rerum deserunt nobis cupiditate, non quia in vitae at praesentium sint commodi quae nam aspernatur quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate eius cum voluptatum quidem similique, quas corporis. Ut voluptates repellendus nam, perferendis adipisci, veniam a doloremque dolorem, beatae dolores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam corrupti consequuntur cumque, voluptatibus maiores velit illo magnam, aliquam laboriosam voluptas. Ullam quo quaerat animi reprehenderit minima corporis enim cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus in quas itaque ducimus suscipit tenetur minus pariatur inventore rerum. Doloremque consectetur, aliquam velit enim sunt libero vero inventore porro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus nulla debitis explicabo exercitationem optio itaque distinctio praesentium cumque, dolorem necessitatibus tenetur beatae dolorum soluta est velit, unde cupiditate sunt?</p>
+
+</body>
+</html>

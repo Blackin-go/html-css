@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h1>Imagens flexiveis</h1>
+    <p>Você esta vendo uma imagem completa, altere o tamanho da tela e veja o que acontece</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/imagem300.jpg" type="image/jpg">
+        <source media="(max-width: 1130px)" srcset="imagens/imagem100.jpg" type="image/jng">
+        <img src="imagens/imagem1300.jpg" alt="Universo G">
+    </picture>
+</body>
+</html>

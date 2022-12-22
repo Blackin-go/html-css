@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, #1988FC 10%, #16a599, #00f3ef, #21883b, #ace42b 40%);
+    color: black;
+}
+
+aside {
+    background-image: radial-gradient(circle, #be5814, #db6940, #FA9587, #ce0b80);
+    height: 200px;
+    width: 350px;
+}

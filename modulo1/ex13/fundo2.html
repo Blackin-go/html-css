@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo personalização</title>
+    <style>
+
+        main {
+            max-width: 700px;
+
+        }
+        
+        div.quadrado {
+            height: 300px;
+            width: 400px;
+            display: inline-block;
+            border: 3px solid black;
+        }
+
+        div#c1 {
+            background-color: black;
+            background-image: url('imagens/pattern002.png');
+            background-size: 40%;
+            background-attachment: fixed;
+            /*background: black url('imagens/pattern002.png') 40% fixed; */
+        }
+
+        div#c2 {
+            background-color: black;
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-x;
+            background-size: 150px;
+            background-attachment: scroll;
+            /* backgroung: black url('imagens/pattern002.png') 150px scroll;*/
+        }
+
+        div#c3 {
+            background-color: black;
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-y;
+            background-size: auto;
+            background-attachment: scroll;
+        }
+
+        div#c4 {
+            background-color: black;
+            background-image: url('imagens/pattern002.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+
+        div#c5 {
+            background-color: black;
+            background-image: url('imagens/pattern002.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: scroll;
+        }
+
+        
+
+            /**background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png');**/
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="quadrado" id="c1"></div>
+        <div class="quadrado" id="c2"></div>
+        <div class="quadrado" id="c3"></div>
+        <div class="quadrado" id="c4"></div>
+        <div class="quadrado" id="c5"></div>
+    </main>
+</body>
+</html>
