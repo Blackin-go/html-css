@@ -1,62 +1,169 @@
-@charset "UTF_8";
+@charset "UTF_8"; /*Esta tag significa que você poderá usar simbolos e Ç*/
 
-#titulo-principal {
-    background-color: aqua;
-    color: rgb(5, 16, 112);
-    height: 120px;
-    width: 300px;
+* {
+    margin: 1px;
 }
 
-.topico {
-    background-color: green;
-    color: white;
-    height: 120px;
-    width: 300px;
-    text-align: right;
+body {
+    background-color: #013f5c2a;
 }
 
-.texto {
-    background-color: blueviolet;
-    color: white;
+.div1 {
+    background-color: #d3d3d3;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding: 1px;
+}
+
+#principal {
+    background-color: #cf3737;
+    max-inline-size: 700px;
+    block-size: 50px;
+    text-align: center;
+    padding-block-start: 5px; /* padding top*/
+}
+
+.pi {
+    background-color: rgb(0, 197, 131);
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
     text-align: justify;
-    height: 120px;
-    width: 350px;
-    padding-top: 2px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
+}
+
+.a {
+    background-color: burlywood;
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.b {
+    background-color: chocolate;
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.c {
+    background-image: linear-gradient(to right, rgb(223, 0, 137), rgb(119, 0, 93), rgb(96, 0, 151));
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div2 {
+    background-color: #868686;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div3 {
+    background-color: #0088c7;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div4 {
+    background-color: #013f5c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-end: 10px; /* padding bottom*/
+    padding-block-start: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 5px;
+}
+
+.botao {
+    background-color: white;
+}
+
+.div5 {
+    background-color: #a5008f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-end: 10px; /* padding bottom*/
+    padding-block-start: 10px; 
 }
 
 a {
-    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     text-decoration: none;
 }
 
-.pseudo:visited {
-    color: chocolate;
-
+.link:hover {
+    background-color: #650094;
+    color: #ffffff;
+    text-decoration: none; 
 }
 
-.pseudo:hover {
-    background-color: rgb(3, 3, 3);
-    color: rgb(161, 197, 252);
-    text-decoration: none;
+main {
+    background-color: rgb(211, 211, 211);
+    block-size: 730px;
+    border: 20px;
 }
 
-.pseudo::before {
-    content: "<<";
-    font-weight: lighter;
+.div6 {
+    background-color: darkgreen;
 }
 
-.pseudo::after {
-    content: ">>";
-    font-weight: lighter;
+.classe {
+    background-color: #650094;
+    color: rgb(232, 228, 255);
 }
 
-.div > p {
-    display: none;
+.classe:hover {
+    background-color: white;
+    color: black;
 }
 
-div:hover > p {
-    display: block;
-    background-color: yellow;
+.div9 {
+    background-color: cadetblue;
+    block-size: 40px;
+    padding: 50px;
+ }
+
+ .elemento {
+    background-color: #0088c7;
+    block-size: 40px;
+    padding: 20px;
 }
+
+.elemento::before{
+    content: "(";
+}
+
+.elemento::after {
+    content: ") eu adicionei isso sem alterar o elemento, apenas adicionando mais elementos através de pseudo elementos";
+}
+

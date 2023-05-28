@@ -4,51 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Seletores personalizados em CSS</title>
 </head>
 <body>
-    <h1>Setetores ID(#) e Class(.)</h1>
-    <p>Identificaremos um determinado elemento único atravavés de ID e agrupar varios elementos com caracteristicas semelhantes através de class,faremos isso em  HTML mesmo</p>
-    <br>
-    <h1 id="titulo-principal">Título principal</h1>
-    <h2 class="topico">Subtítulo</h2>
-    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit iusto deleniti veritatis. Architecto repellat nesciunt possimus quos eos quia, quis tempora pariatur? Fugiat aperiam quod rerum numquam ea, harum provident.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, asperiores. Animi corrupti reprehenderit eligendi. Corporis libero quas facere dolore pariatur. Nobis corrupti fuga blanditiis fugiat culpa sequi vitae asperiores labore.</p>
-    <h2>Poder dos identificadores</h2>
-    <p>através desses elementos unicos conseguimos personalizar cada um exclusivamente</p>
-    <h2>Pseudo-classes CSS</h2>
-    <p>Pseudo-classes é uma palavra chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento, Veja alguns tipos de pseudo-classes</p>
-        <ul>
-            <li>: hover  </li>
-            <li>: visited </li>
-            <li>: active </li>
-            <li>: checked </li>
-            <li>: empty </li>
-            <li>: focus </li>
-        </ul>
-    <h2>Pseudo-elemento CSS</h2>
-    <p>Palavra chave adicionada às declarações de um seletor após dois sinais de pontos e permitem que você formate um pedaço específico do elemento referenciado. Veja alguns tipos de pseudo-elementos:</p>
-    <ul>
-        <li>::before </li>
-        <li>::after </li>
-        <li>::first-letter </li>
-        <li>::first-line</li>
-        <li>::</li>
-    </ul>
-    <h3>Vamos ver as funcionalidades personalizando links atraves de pseudo classes e elementos</h3>
-    <p>Se quiser saber sobre tais funcionalidades visite o side do <a href="https://www.w3c.br/">Escritório w3c no Brasil</a>
-    </p>
-    <p>Para acessar o facebook acesse o<a href="https://www.facebook.com/" class="pseudo"> site do facebook</a></p>
-    <p>Veja as diferenças acima, editamos em css a cor do sites visitado e não visitado, e também quando passamos o mouse em cima do link ele muda de cor</p>
-    <p>Adicionamos elemento de pseudo elemento, inserindo fundo preto e cor da letra diferente da que já estava adicionada</p>
-    <h1>Outro elemento de pseudo classes</h1>
-    <h2>Conteúdo especial</h2>
-    <div class="div">
-        passe o mouse aqui
-        <p>SURPEESAA</p>
-    </div>
-    <P>veja o conteúdo oculto aparecendo</P>
-    <p>Escondemos o elemento dentro de outro e fizemos ele aparecer, esse é o poder do pseudo-classe de propriedade display com valor none</p>
+    <main>
+
+        <div class="div1">
+
+            <h1 id="principal"> Setetores ID(#) e Class(.)</h1>
+
+            <p class="pi">Identificaremos um determinado elemento único atravavés de ID e agrupar varios elementos com caracteristicas semelhantes através de class,faremos isso em  HTML e CSS para localização do objeto. </p><hr>
+
+            <p class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, quia delectus. Quos dignissimos praesentium delectus aliquid expedita excepturi, iusto maxime corporis perferendis recusandae perspiciatis numquam, provident magni dolorum beatae facere!</p>
+
+            <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, totam corporis. Quam voluptate deleniti architecto quidem sunt. Sequi voluptate eos tempore magni officia facilis magnam sit harum, autem hic commodi?</p>
+            <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod labore, voluptas vel minima impedit. Omnis recusandae, totam nobis similique, rerum, sequi dignissimos nulla placeat sapiente suscipit in culpa soluta?</p><br><hr>
+        </div>
+
+        <div class="div2">
+
+            <h2>Usando CSS em várias páginas para facilitar a edição</h2><br>
+            
+            <p>O CSS atrvés criado para esta página devera ser adicionado em todas as outras páginas, a fim de falicilitar a edição das páginas mais facilmente futuramente</p><br>
+            <button class="botao"><a href="pagina2.html" target="_blank"> Ir à pagina</a></button><br>
+            
+
+        </div>
+
+        <div class="div2">
+            <h2 >Poder dos identificadores</h2>
+
+            <p>através desses elementos unicos conseguimos personalizar cada ítem exclusivamente</p>
+        </div>
+
+        <div class="div3">
+            <h2>Pseudo-classes CSS</h2>
+            <p>Os pseudo classes altera uma classe completa como um link por exemplo, veja abaixo ao passar o mouse sobre o link, sempre seguido de dois pontos ( : )</p>
+
+            <div class="div9"><a href="" class="classe">Textdelink</a></div>
+                <ul>
+
+                    <li><abbr title="">: hover</abbr>  </li>
+                    <li><abbr title="">: visited</abbr> </li>
+                    <li><abbr title="">: active</abbr> </li>
+                    <li><abbr title="">: checked</abbr> </li>
+                    <li><abbr title="">: empty</abbr> </li>
+                    <li><abbr title="">: focus</abbr> </li>
+                </ul>
+        </div>
+
+        <div class="div4">
+
+            <h2>Pseudo-elemento CSS</h2>
+
+            <p>Os pseudo elementos agem como um filho do elemento, alteram parte do elemento, diferente do pseudo classe que altera completamente o elemento, como a cor por exemplo. sempre depis de 2x dois pontos ( :: ), veja abaixo.</p>
+            <ul>
+
+                <div>
+                    <p class="elemento">Teste peseudo elemento</p>
+                </div>
+
+                <li>::before </li> <!-- Antes do elemento-->
+                <li>::after </li> <!--Depois do elemento-->
+                <li>::first-letter </li>
+                <li>::first-line</li>
+            </ul>
+        </div>
+
+        <div class="div5">
+
+            <h2>Vamos ver as funcionalidades personalizando links atraves de pseudo classes e elementos</h2>
+            <p>Se quiser saber sobre tais funcionalidades visite o side do <a href="https://www.w3c.br/" class="link">Escritório w3c no Brasil</a></p>
+        
+
+            <p>Para acessar o facebook acesse o<a href="https://www.facebook.com/" target="_blank"  class="link"> site do facebook</a></p>
+
+            <p>Veja as diferenças acima, editamos em css a cor do sites visitado e não visitado, e também quando passamos o mouse em cima do link ele muda de cor</p>
+
+            <p>Adicionamos elemento de pseudo elemento, inserindo fundo preto e cor da letra diferente da que já estava adicionada</p>
+
+        </div>
+        
+    </main>
 </body>
 </html>

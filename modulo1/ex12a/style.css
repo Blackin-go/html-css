@@ -1,108 +1,45 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'amsterdam';
+    src: url(amasterdam.ttf.ttf) format('opentype'), url(amasterdam.ttf.ttf) format(truetype); 
+}
+
+html {
+    background-color: white;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(62, 139, 255);
-    outline: 2px solid aqua;
+    background-color: #FCD1DE;
+    color: #5B0116;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "amsterdam";
+    color: #9c0024;
+    margin: auto  auto auto 20px;;
+}
+
+a {
+    color: #9c0024;
+    text-decoration: none;
+    padding: 5px;
+    padding-inline-start: 15px;
+}
+
+a:hover {
+    color: #ffbccc;
+    background-color: #9c0024;
+    border: 2px;
 }
 
 header {
-    background-color: rgb(0, 71, 71);
-    color: rgb(255, 255, 255);
-    height: 110px;
-    width: auto;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-}
-
-nav {
-    background-color: rgb(34, 252, 252);
-    color: black;
-    text-align: center;
-    height: 35px;
-    width: auto;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 7px 3px 0px 3px;
-    margin: -14px 0px 0px -1px;
+    margin: auto;
 }
 
 main {
-    background-color: azure;
-    color: black;
-    height: 600px;
-    width: auto;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 1px 1px 1px 1px;
-    margin: 14px 1px 1px 1px;
 
 }
 
-section {
-    background-color: azure;
-    color: black;
-    height: 400px;
-    width: 350px;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 0px 1px 0px 0px;
-    margin: 2px 0px 0px 2px;
-
-}
-
-.articleum {
-    background-color: azure;
-    color: black;
-    height: 150px;
-    width: 342px;
-    border: 1px solid green;
-    outline: 1px solid aqua;
-    padding: 1px 1px 1px 1px;
-    margin: 3px 4px 3px 2px;
-}
-
-.articledois {
-    background-color: azure;
-    color: black;
-    height: 150px;
-    width: 342px;
-    border: 1px solid green;
-    outline: 1px solid aqua;
-    padding: 1px 1px 1px 1px;
-    margin: 3px 4px 3px 2px;
-}
-
-aside {
-    background-color: azure;
-    color: black;
-    height: 144px;
-    width: 127px;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 0px 0px 0px 0px;
-    margin: -99px 5px 0px 211px;
-}
-
-.aside {
-    background-color: azure;
-    color: black;
-    height: 398px;
-    width: 196px;
-    border: 1px solid green;
-    outline: 2px solid aqua;
-    padding: 1px 1px 1px 1px;
-    margin: -402px -337px 345px 360px;
-}
-
-footer {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.titulo {
-    text-align: center;
-}
