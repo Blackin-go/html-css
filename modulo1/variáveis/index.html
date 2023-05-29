@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo varáveis</title>
+    <style>
+
+    *{ /* Tag remover todos os espaços entre as tags */
+        margin: 0px;
+        padding: 5px;
+    }
+
+    
+
+    :root { /* Esta tag é uma PSEUDO CLASSE DE VARIAVEL para facilitar na hora da edição do design do site*/
+        
+    --color1: #000000; /* Essas são as variáveis criadas */
+    --color2: #ffc5c5;
+    --color3: #00568f86;
+    --color4: #0044ff;
+
+    --font-padrão: Arial, Verdana, Helvetica;
+    --fonte-destaque: Arial;
+    --fonte-paragrafo: Arial;
+    }
+
+    body {
+    font-family: var(--font-padrão); /* VAR significar que a variável foi adicionada*/
+    color: var(--color3); /* Variável de cor */
+    }
+
+    main{
+        block-size: 600px;
+        max-inline-size: 500px;
+        background-color: var(--color4);
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: #000000;
+    }
+
+    h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--color1);
+    }   
+
+    p {
+        color: var(--color2);
+    }
+
+    a {
+        background-color: rgb(255, 255, 255);
+        color: var(--color4);
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Aprendendo variáveis em css</h1>
+        <p>Usaremos uma pseudo classe chamada < :root > diretamente no css, veja lá em cima</p>
+        <nav>
+            <a href="">Olá</a>
+            <a href="">Olá</a>
+            <a href="">Olá</a>
+        </nav>
+    </main>
+</body>
+</html>
