@@ -172,6 +172,13 @@ footer {
     margin: auto;
     box-shadow: 1px 1px 10px #3a4a6d;
     padding-inline-start: 40px;
+
+    list-style-type: circle; /* estilo da lista */
+
+    list-style-position: inside; /* posição da lista */
+
+    columns: 2; /* quantidade de colunas */
+
     
 }
 
