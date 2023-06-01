@@ -6,35 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos imagens de fundo</title>
     <style>
+
+        * {
+            margin: 1px;
+        }
+
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+            margin: auto;
+            text-align: center;
+
+        }
+
         div.quadrado {
             background-color: #d4d4d4;
             border: 2px solid blueviolet;
             border-radius: 15px;
-            height: 200px;
-            width: 200px;
-            display: inline-block;
+            block-size: 150px;
+            inline-size: 150px;
+            display: inline-block; /* Indica a posição dos blocos, no caso em linha, ou seja, um ao lado do outro */
+            margin-block-start: 20px;
+
+            /* Configuração padrão de todas as caixas, marcado com CLASS  */
         }
 
         div#q1 {
-            background-color: black;
+            background-color: black; /* tag para fundo com cor, identificado com ID e configurado de forma única */
+            
         }
 
         div#q2 {
-            background: linear-gradient(to left, blueviolet, green, yellow);
+            background: linear-gradient(to left, blueviolet, green, yellow); /* tag para fundo com degrade, identificado com ID e configurado de forma única */
         }
 
         div#q3 {
-            background-image: url('imagens/pattern003.png');
+            background-image: url('imagens/pattern003.png'); /* tag para fundo com imagem, identificado com ID e configurado de forma única*/ 
+        }
+
+        div#q4 {
+            background-image:linear-gradient(to right, #0000ff, #000000, #ffffff);
         }
     </style>
 </head>
 <body>
 
-    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q1"></div> <!--caixa 1, usado CLASS para criar um padrão e ID para configurações unicas-->
 
-    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q2"></div> <!--caixa 2, usado CLASS para criar um padrão e ID para configurações unicas-->
 
-    <div class="quadrado" id="q3"></div>
+    <div class="quadrado" id="q3"></div> <!--caixa 3, usado CLASS para criar um padrão e ID para configurações unicas-->
+
+    <div class="quadrado" id="q4"></div> <!--caixa 1, usado CLASS para criar um padrão e ID para configurações unicas-->
 
 
 </body>

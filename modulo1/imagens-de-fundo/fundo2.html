@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens de fundo personalização</title>
+
+    <title>Imagens de fundo e posições</title>
     <style>
 
+        body {
+            background-color: rgb(15, 15, 15);
+            
+            
+        }
+
+        /* Podemos fazer apenas uma declaração, de uma vez usando SHORTHANDS, seguindo esta regra
+        
+        color > image > position > repeat > size > attachment
+
+        */
+
+
+
         main {
-            max-width: 700px;
+            block-size: 100%;
+            inline-size: 90%;
+            background-color: rgb(78, 78, 78);
+            background-image: url(imagens/wallpaper003.jpg);
+            background-size: cover; /* Essta tag deixara a imagem completa por toda a tela, preenchendo por completo porem pode ter algun cortes da imagem */
+            margin: auto;
+            text-align: center;
+            background-attachment: fixed; /* Neste caso a imagem fica fixa ao funo da tela */
+
+            /*background-attachment: scroll;  Neste caso a imagem rola justo da tela */
 
         }
         
         div.quadrado {
-            height: 300px;
-            width: 400px;
+            block-size: 250px;
+            inline-size: 250px;
             display: inline-block;
-            border: 3px solid black;
+            border: 1px solid #ff2a2a;
+            margin: auto;
+
         }
+
+        
 
         div#c1 {
             background-color: black;
-            background-image: url('imagens/pattern002.png');
-            background-size: 40%;
-            background-attachment: fixed;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-size: 97vh; /* Tag para indicar o tamanho da imagem no background cobrindo toda a altura conforme o tamanho da tela */ 
+            background-attachment: fixed; /* FIXED: Tag que fixa a imagem no fundo da tela*/
             /*background: black url('imagens/pattern002.png') 40% fixed; */
+            background-position: center center;
+            background-size: cover;/* Se adapta toda a tela, porem pode cortar a imagem devido ao tamanho da tela */
+            background-size: contain;/* Mostra a imagem 100% sem cortes */
+
         }
 
         div#c2 {
             background-color: black;
-            background-image: url('imagens/pattern002.png');
-            background-repeat: repeat-x;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-repeat /* tag para decidir se a imagem deve ou não repetir*/: repeat-x; /* Repeat-x: Significa que a repetição é na horizontal */
             background-size: 150px;
             background-attachment: scroll;
             /* backgroung: black url('imagens/pattern002.png') 150px scroll;*/
@@ -38,31 +70,90 @@
 
         div#c3 {
             background-color: black;
-            background-image: url('imagens/pattern002.png');
-            background-repeat: repeat-y;
-            background-size: auto;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-repeat: repeat-y; /* Repeat-y: Aqui a tag significa que a imagem se repete na vertical */
+            background-size: 150px;
             background-attachment: scroll;
         }
 
-        div#c4 {
-            background-color: black;
-            background-image: url('imagens/pattern002.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
-        }
 
         div#c5 {
             background-color: black;
-            background-image: url('imagens/pattern002.png');
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: left top; /* posição da imagem na caixa */
+            background-size: auto;
             background-repeat: no-repeat;
-            background-size: contain;
-            background-attachment: scroll;
+            
         }
 
-        
+        div#c6 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: auto; /* Tamanho da imagem no auto */
+        }
 
-            /**background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png');**/
+        div#c7 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        div#c8 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        div#c9 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        div#c10{
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        div#c11 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: auto;
+        
+        }
+
+        div#c12 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: auto;
+        
+        }
+
+        div#c13 {
+            background-color: black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: auto;
+        
+        }
+
+            /**background-image: url('https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png');**/ /* Imagem da nuvem de sites externos */
 
     </style>
 </head>
@@ -71,8 +162,16 @@
         <div class="quadrado" id="c1"></div>
         <div class="quadrado" id="c2"></div>
         <div class="quadrado" id="c3"></div>
-        <div class="quadrado" id="c4"></div>
         <div class="quadrado" id="c5"></div>
+        <div class="quadrado" id="c6"></div>
+        <div class="quadrado" id="c7"></div>
+        <div class="quadrado" id="c8"></div>
+        <div class="quadrado" id="c9"></div>
+        <div class="quadrado" id="c10"></div>
+        <div class="quadrado" id="c11"></div>
+        <div class="quadrado" id="c12"></div>
+        <div class="quadrado" id="c13"></div>
+        
     </main>
 </body>
 </html>

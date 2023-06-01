@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio Astronauta</title>
+    <style>
+
+        body {
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            block-size: 96vh;
+            inline-size: 98%;
+            background-position: center center;
+            background-position: relative;
+
+        }
+
+        div {
+
+            block-size: 400px;
+            inline-size: 400px;
+            background-image: url(imagens/astronauta.png);
+            background-position: center center;
+            background-size: 100%;
+            position: absolute; /* Como esta caixa esta contida dentro de outra seu posicionamento deve ser absoluto */
+
+            inset-inline-start: 50%;  /*a partir de 50% se inicia o padding, LEFT */ 
+            inset-block-start: 50%; /* a partir de 50% se inicia o padding, TOP */
+
+            transform: translate(-50%, -50%); /* Movimento da caixa */
+
+            /* Esta é uma caixa interna e modificamos a posição dela dentro de outra caixa */
+            
+        }
+
+        img {
+            block-size: 100% 100%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="caixa" id="c1"></div>
+    
+</body>
+</html>
