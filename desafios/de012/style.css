@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px 
+    margin: 0px;
+    padding: 0px;
 }
 
 @font-face {
@@ -32,6 +33,7 @@ header {
 header > p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: small-caps; /* trasforma todas as letras em maiusculas, porem as iniciais maiores que as demais */
 }
 
 h1 {
@@ -39,6 +41,7 @@ h1 {
     padding-block-start: 40px;
     padding-block-end: 10px;
     font-size: 26px;
+    text-transform: small-caps; /* trasforma todas as letras em maiusculas, porem as iniciais maiores que as demais */
 }
 
 p {
@@ -73,7 +76,7 @@ main {
 div {
     background-color: #ebebeb5e;
     block-size: 300px;
-    max-inline-size: 800px;
+    inline-size: auto;
     position: relative;
     margin: auto;
     
@@ -84,6 +87,7 @@ div.quadrado {
     border: 1px solid rgba(0, 0, 0, 0.034);
     block-size: 300px auto;
     inline-size: 100%;
+    margin: auto;
 
 
 }
@@ -176,12 +180,14 @@ div.quadrado#cx3 {
 footer {
     background-color: rgb(10, 10, 10);
     color: white;
+    block-size: 50px;
     inline-size: 800px;
-    margin: auto;
     inline-size: auto;
+    text-align: center;
 }
 
 footer > p {
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-align: center;
+    padding-block-start: 10px;
 }
