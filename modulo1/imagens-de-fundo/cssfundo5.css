@@ -13,7 +13,7 @@ section.imagem {
     background-color: rgb(107, 107, 107);
     color: bisque;
     block-size: 250px;
-    inline-size: 800px;
+    max-inline-size: 800px;
     margin: auto;
     padding-block-start: 15px;
     background-size: cover; /* COnfiguração que completa toda a caixa com a imagem selecionada, possuindo possíveis perdas de imagem */
@@ -23,18 +23,21 @@ section#img1 {
     background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
     background-position: center top;
     background-attachment: fixed; /* Esta configuração do efeito paralax*/
+    margin: auto;
 }
 
 section#img2 { /* configurações do efeito paralax*/
     background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
     background-position: center center;
     background-attachment: fixed; /* Esta configuração do efeito paralax*/
+    margin: auto;
 }
 
 section#img3 {
     background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
     background-position: center bottom;
     background-attachment: fixed; /* Esta configuração do efeito paralax*/
+    margin: auto;
 }
 
 .texto {
