@@ -67,7 +67,7 @@ p > a:hover {
 
 main {
     background-color: rgb(255, 170, 170);
-    inline-size: 800px;
+    max-inline-size: 800px;
     margin: auto;
     inline-size: auto;
 }
