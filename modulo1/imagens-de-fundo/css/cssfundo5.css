@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+section.imagem {
+    background-color: rgb(107, 107, 107);
+    color: bisque;
+    block-size: 250px;
+    inline-size: 800px;
+    margin: auto;
+    padding-block-start: 15px;
+    background-size: cover; /* COnfiguração que completa toda a caixa com a imagem selecionada, possuindo possíveis perdas de imagem */
+}
+
+section#img1 {
+    background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
+    background-position: center top;
+    background-attachment: fixed; /* Esta configuração do efeito paralax*/
+}
+
+section#img2 { /* configurações do efeito paralax*/
+    background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-attachment: fixed; /* Esta configuração do efeito paralax*/
+}
+
+section#img3 {
+    background-image: url(/modulo1/imagens-de-fundo/imagens/wallpaper002.jpg);
+    background-position: center bottom;
+    background-attachment: fixed; /* Esta configuração do efeito paralax*/
+}
+
+.texto {
+    background-color: rgba(49, 49, 49, 0.719);
+    block-size: 230px;
+    inline-size: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-inline-start: 10px;
+    padding: 5px 0px 0px 5px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
