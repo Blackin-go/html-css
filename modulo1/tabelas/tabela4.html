@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalizando colunas</title>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -13,126 +14,103 @@
         table {
             border-collapse: collapse;
             padding: 10px;
-        }
-
-        th, tr, td {
+            border: 1px black solid;
             text-align: center;
-            border: 1px solid black;
-            width: 90px;
-            padding: 10px;
         }
 
         th {
-            text-align: left;
-            color: white;
+            color: black;
+            border: black solid 1px;
+            inline-size: 150px;
+            block-size: 50px;
         }
 
-        tfoot > tr > th {
-            background-color: gray;
-            color: white;
+        td {
+            border: black 1px solid;
+            inline-size: 150px;
+            block-size: 50px;
         }
 
-        .meio {
-            background-color: aquamarine;
+        col.nome {
+            background-color: blueviolet;
+        }     
+        
+        colgroup.pais {
+            background-color: cadetblue;
         }
 
-        .nome, .prof {
-            background-color: rgb(43, 153, 156);
+        colgroup.filmes {
+            background-color: crimson;
         }
 
-        .azul {
-            background-color: rgb(4, 40, 202);
+        colgroup.series {
+            background-color: violet;
         }
-
-        .verde {
-            background-color: rgb(0, 177, 15);          
-        }
+        
     </style>
 </head>
 <body>
-    <h1>Personalizando colunas de tabelas</h1>
+    <h1>Personalizando colunas</h1>
+
     <table>
-        <colgroup>
+
+        <colgroup> <!--Usaremos essa tag colgroup para personalizar uma coluna inteira-->
             <col class="nome">
-            <col class="meio" span="2">
-            <col class="prof">
-            <col class="azul">
-            <col class="verde">
-            <col>
+            <colgroup class="pais" span="2"><!-- span significa a quantidade de colunas selecionadas em caso de grupos de colunas ou colgroup-->
+            <colgroup class="filmes" span="3">
+            <colgroup class="series" span="3">
         </colgroup>
         <caption>Tabela de clientes</caption>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Sexo</th>
-                <th>Idade</th>
-                <th>Profissão</th>
-                <th>Cidade</th>
-                <th>Estado</th>
+                <th colspan="1" scope="col">Nome</th>
+                <th colspan="2" scope="colgroup">Pais</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+                <th colspan="3" scope="colgroup">Series</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
+                <td>Amanda</td>
+                <td>Fernanda</td>
+                <td>Carlos alberto</td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
             </tr>
             <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
+                <td>Julio</td>
+                <td>Adriana </td>
+                <td>Berola</td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
             </tr>
+
             <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
-            </tr>
-            <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
-            </tr>
-            <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
-            </tr>
-            <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
-            </tr>
-            <tr>
-                <td>nome</td>
-                <td>sexo</td>
-                <td>idade</td>
-                <td>profissao</td>
-                <td>cidade</td>
-                <td>estado</td>
+                <td>Carlos</td>
+                <td>Julio</td>
+                <td>Adriana </td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
+                
             </tr>
         </tbody>
+
         <tfoot>
             <tr>
-                <th scope="row" colspan="5">Total de clientes</th>
-                <td>7(sete)</td>
+                <th scope="row" colspan="8">Total de clientes</th> <!--COlgroup significa que esse guarda um conjunto de grupos-->
+                <td>3(sete)</td>
             </tr>
         </tfoot>
     </table>

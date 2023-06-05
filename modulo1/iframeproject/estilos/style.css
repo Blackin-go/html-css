@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px; 
+    margin: 0px;
+
+}
+
+html, body {
+    block-size: 100vh;
+    inline-size: vw;
+    background-color: cadetblue;
+}
+
+body {
+    background: url(/modulo1/iframeproject/imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    block-size: 90vh;
+    position: relative;
+}
+
+
+section#telefone {
+    block-size: 630px;
+    inline-size: 310px;
+    inset-block-start: 50%; /* top */
+    inset-inline-start: 50%; /* left */
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    /* A configuração acima permite que a caixa fique posicionada ao meio */
+
+    background: url(/modulo1/iframeproject/imagens/frame-iphone.png);
+
+}
+
+iframe#tela {
+    position: relative; /* Relative significa que o bloo pode ser movido na ela */
+    inset-block-start: 80px;
+    inset-inline-start: 22px;
+    block-size: 470px;
+    inline-size: 266px;
+}
+

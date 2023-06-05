@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tabelas Responsivas</title>
     <style>
         body {
@@ -18,12 +19,12 @@
         th, tr, td {
             text-align: center;
             border: 1px solid black;
-            width: 90px;
+            inline-size: 90px;
             padding: 5px;
         }
 
-        div#conteiner {
-            overflow-x: auto;
+        div#conteiner { /* usamos uma div para conter a tabela */
+            overflow-x: auto; /* overflow para limitar a rolagem somente dentro da div */
         }
 
         tbody > tr:nth-child(2n) {
