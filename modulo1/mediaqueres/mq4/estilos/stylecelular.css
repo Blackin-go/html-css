@@ -25,7 +25,8 @@ h1 {
 }
 
 main {
-    margin: 15px auto auto auto;
+    margin: auto auto auto auto;
+    padding: 10px 0px 0px 0px;
     background-color: blueviolet;
     inline-size: 500px;
     block-size: 50vh;
@@ -44,8 +45,8 @@ a {
 
 }
 
-a:hover {
-    background-color: bisque;
+li:hover {
+    background-color: rgb(170, 105, 255);
     color: blueviolet;
     padding: 2px;
     border-radius: 5px;
@@ -63,8 +64,8 @@ ul, li {
 }
 
 #burg {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
     max-width: 515px;
     display: block;
     margin: auto;
@@ -74,6 +75,6 @@ ul, li {
 }
 
 #burg:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
