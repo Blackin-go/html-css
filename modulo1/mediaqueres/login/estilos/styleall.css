@@ -7,7 +7,7 @@
     section#login {
 
         width: 700px;
-        height: 500px;
+        height: 50%;
         transition: width 0.3s;
     }
 
@@ -23,7 +23,7 @@
 
     div#form {
         float: right;
-        width: 500px;
+        height: 50%;
         transition: width 0.3s;
     }
 
@@ -40,7 +40,7 @@
     section#login {
 
         width: 1000px;
-        height: 500px;
+        height: 70%;
     
     }
 
