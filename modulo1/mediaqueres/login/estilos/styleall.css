@@ -8,23 +8,27 @@
 
         width: 700px;
         height: 500px;
-        transition: width 0.2s;
+        transition: width 0.3s;
     }
 
     div#imagem {
         float: left;
-        width: 400px;
+        width: 200px;
         height: 100%;
         background-position: center;
         background-size: cover;
         border-radius: 20px 0px 0px 20px;
-        transition: width 0.2s;
+        transition: width 0.3s;
     }
 
     div#form {
         float: right;
-        width: 300px;
-        transition: width 0.2s;
+        width: 500px;
+        transition: width 0.3s;
+    }
+
+    form {
+        transition: 0.1s;
     }
 
 }
