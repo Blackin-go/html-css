@@ -25,11 +25,11 @@ section#login {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 500px;
     border-radius: 20px;
     border: 3px #0000003d solid;
+    transform: translate(-50%, -50%);
     transition: width 0.5s;
 }
 
@@ -59,6 +59,7 @@ h1 {
 p {
     text-align: left;
     padding: 0px 7px 0px 7px ;
+    font-size: 14px;
 }
 
 p.botao {
@@ -70,16 +71,12 @@ p.paragrafo {
     font-size: 13px;
 }
 
-p.senha {
-
-}
-
 p >.botaoenviar {
-    background-color: rgb(14, 90, 189);
+    background-color: #0e5abd;
     height: 24px;
     width: 100px;
     margin: center;
-    color: #cacaca;
+    color: #ffffff;
     padding-left: 10px;
     border-radius: 3px;
     border: 0px;
@@ -87,22 +84,52 @@ p >.botaoenviar {
 }
 
 p >.botaoenviar:hover {
-    background-color: #01498d;
+    background-color: #5390ca;
 }
 
 
 
 p#enviar {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 a.recuperarsenha {
    
     text-decoration: none;
-    color: #01498d;
+    color: #0e5abd;
+}
+
+a.recuperarsenha:hover {
+    background-color: #0e5abd;
+    color: white;
+    padding: 3px;
+    border: 1px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
 }
 
 abbr {
     text-decoration: none;
+}
+
+div.campo {
+    padding-bottom: 8px;
+}
+
+div.campo > input {
+    background-color: #0e5abd;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 90%;
+    height: 23px;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    border: 0px;
+}
+
+div.campo > input:hover {
+    background-color: #5390ca;
 }

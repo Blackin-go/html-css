@@ -22,15 +22,12 @@
 
                 <form action="login.php" method="post" autocomplete="off">
 
-                    <p  class="log">
-                        <input type="text" name="usu" id="iusu" autocomplete="off" maxlength="20" required placeholder="@usuário">
-                        <label for="iusu">Usuário</label>
-                    </p>
-
-                    <p class="senha">
-                        <input type="password" name="senha" id="isenha" autocomplete="off" maxlength="20" minlength="8" required placeholder="Senha">
-                        <label for="isenha">Senha</label>
-                    </p>
+                        <div class="campo">
+                            <input type="text" name="usu" id="iusu"  autocomplete="off" maxlength="20" required placeholder="@usuário"></div>
+                    
+                        <div class="campo">
+                            <input type="password" name="senha" id="isenha" autocomplete="off" maxlength="20" minlength="8" required placeholder="Senha">
+                        </div>
 
                     <p id="enviar">
                         <input type="submit" value="Entrar" class="botaoenviar">
