@@ -20,7 +20,7 @@ main {
 }
 
 section#login {
-    background-color: rgba(162, 210, 255, 0.623);
+    background-color: #a2d2ff9f;
     color: rgb(5, 5, 5);
     position: relative;
     left: 50%;
@@ -62,28 +62,47 @@ p {
 }
 
 p.botao {
-    padding: 10px 0px 0px 5px;
+    width: 60px;
 }
 
-p.log {
-    
+p.paragrafo {
+    padding: 5px;
+    font-size: 13px;
 }
 
 p.senha {
-    
-}
 
-p.botao {
-    
 }
 
 p >.botaoenviar {
-    background-color: rgb(255, 255, 255);
-    color: #292929;
+    background-color: rgb(14, 90, 189);
+    height: 24px;
+    width: 100px;
+    margin: center;
+    color: #cacaca;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 0px;
+
+}
+
+p >.botaoenviar:hover {
+    background-color: #01498d;
+}
+
+
+
+p#enviar {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 a.recuperarsenha {
    
     text-decoration: none;
     color: #01498d;
+}
+
+abbr {
+    text-decoration: none;
 }

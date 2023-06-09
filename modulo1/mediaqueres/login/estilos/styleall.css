@@ -23,7 +23,8 @@
 
     div#form {
         float: right;
-        height: 50%;
+        width: 490px;
+        
         transition: width 0.3s;
     }
 
@@ -46,7 +47,7 @@
 
     div#imagem {
         float: left;
-        width: 650px;
+        width: 600px;
         height: 100%;
         background-position: center;
         background-size: cover;
@@ -57,7 +58,7 @@
     div#form {
         float: right; /* Tag que define a posição da caixa, neste caso definido na direita */
 
-        width: 350px; /* TAg para definir a largura da caixa, lembre-se que o tamanho deve ser sempre inferior ao tamanho total da caixa, ou ela será quebrada para uma linha a abaixo -- Veja que a soma desta caixa ( 350px) com a primeira caixa( 650px) da um total de 1000px, fazendo com que as duas fiquem alinhadas dentro da caixa section*/
+        width: 390px; /* TAg para definir a largura da caixa, lembre-se que o tamanho deve ser sempre inferior ao tamanho total da caixa, ou ela será quebrada para uma linha a abaixo -- Veja que a soma desta caixa ( 350px) com a primeira caixa( 650px) da um total de 1000px, fazendo com que as duas fiquem alinhadas dentro da caixa section*/
     }
 
         
