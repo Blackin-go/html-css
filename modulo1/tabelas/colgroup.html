@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup para personalização de colunas</title>
+
+    <style>
+
+        body {
+            font-family: sans-serif
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            color: black;
+            font-weight: bolder;
+        }
+
+        tr, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .c1 {
+            background-color: blue;
+        }
+
+        .c2 {
+            background-color: beige;
+        }
+
+        .c3 {
+            background-color: brown;
+        }
+
+        .c4 {
+            background-color: chartreuse;
+        }
+
+    </style>
+<body>
+    <table>
+        <colgroup> <!-- Usado para melhorar a opersonalização das colunas, o HTML identifica automaticamente cada coluna seguindo a ordem do codigo-->
+
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <col class="c4">
+        </colgroup>
+
+        <tr>
+            <th>abc</th>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com tableas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 300px;
+            height: 300px;
+            border-collapse: collapse; /*Para criar um colapso entre as bordas( colar as bordas)*/
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical*/
+            
+        }
+
+        tr.linha {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>**importante** Usa-se tabelas apenas para armazenar dados, e nao para criar site</h1>
+
+    <!--HIERARQUIA DE TABELAS SIMPLES
+
+        TABLE = tabela (table)
+            TABLE ROW = linha de tabela (tr)
+                TABLE HEARDER = cabeça de tabela (thead)
+                    TABLE DATA = dado de tabela (tr)
+    -->
+
+    <h2>Minha primeira tabela</h2>
+     
+    <table>
+        <tr>
+            <td>dl1</td>
+            <td>dl1</td>
+            <td>dl1</td>
+        </tr>
+        <tr class="linha">
+            <td>dl2</td>
+            <td>dl2</td>
+            <td>dl2</td>
+        </tr>
+        <tr>
+            <td>dl3</td>
+            <td>dl2</td>
+            <td>dl3</td>
+        </tr>
+    </table>
+</body>
+</html>

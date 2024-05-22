@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito zebrado em tabelas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            margin: left;
+            width: 600px;
+            border-collapse: collapse;
+            position: relative; /* Toda vez que uma caixa tiver como objetivo se movimentar ou sofrer alterações é indispensável essa configuração*/
+            
+        }
+
+
+
+        th {
+            background-color: rgb(105, 105, 105);
+            color: rgb(232, 232, 232);
+            border: 1px solid black;
+            text-align: left;
+            padding: 3px;
+        } 
+
+        tr, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        caption {
+            background-color: rgb(105, 105, 105);
+            color: white;
+            font-weight: bolder;
+            padding: 5px;
+            border: 1px solid black;
+            
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        thead {
+            text-align: center;
+        }
+
+        thead > tr > th { /* Esta configuração nos permite fixar o cabeçalho apos rolar a tela*/
+            position: sticky;
+            top: -1px;
+            background-color: black;
+            color: white;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) { /*Esta é o comando para fazer o efeito zebrado em listas. 2n significa quantas linhas o efeito irá pular*/
+            background-color: lightgray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>efeito zebrado em tabelas</h1>
+
+   
+   <table>
+    <caption>Informações sobre a população brasileira</caption>
+        <thead>
+            <tr>
+                <th>Estado</td>
+                <th>População</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">6 211 223</td>
+        </tr>
+
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">11 451 999
+            </td>
+        </tr>
+
+        <tr>
+            <td>Brasília</td>
+            <td class="num">2 817 381</td>
+        </tr>
+
+        <tr>
+            <td>Fortaleza</td>
+            <td class="num">2 428 708</td>
+        </tr>
+
+        <tr>
+            <td>Salvador</td>
+            <td class="num">2 417 678</td>
+        </tr>
+
+        <tr>
+            <td>Belo Horizonte</td>
+            <td class="num">2 315 560</td>
+        </tr>
+
+        <tr>
+            <td >Manaus</td>
+            <td class="num">2 063 689</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>Numero</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">6 211 223</td>
+            </tr>
+    
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">11 451 999
+                </td>
+            </tr>
+    
+            <tr>
+                <td>Brasília</td>
+                <td class="num">2 817 381</td>
+            </tr>
+    
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">2 428 708</td>
+            </tr>
+    
+            <tr>
+                <td>Salvador</td>
+                <td class="num">2 417 678</td>
+            </tr>
+    
+            <tr>
+                <td>Belo Horizonte</td>
+                <td class="num">2 315 560</td>
+            </tr>
+    
+            <tr>
+                <td >Manaus</td>
+                <td class="num">2 063 689</td>
+            </tr>
+    
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td>Numero</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">6 211 223</td>
+                </tr>
+        
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">11 451 999
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Brasília</td>
+                    <td class="num">2 817 381</td>
+                </tr>
+        
+                <tr>
+                    <td>Fortaleza</td>
+                    <td class="num">2 428 708</td>
+                </tr>
+        
+                <tr>
+                    <td>Salvador</td>
+                    <td class="num">2 417 678</td>
+                </tr>
+        
+                <tr>
+                    <td>Belo Horizonte</td>
+                    <td class="num">2 315 560</td>
+                </tr>
+        
+                <tr>
+                    <td >Manaus</td>
+                    <td class="num">2 063 689</td>
+                </tr>
+        
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <td>Numero</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">6 211 223</td>
+                    </tr>
+            
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">11 451 999
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>Brasília</td>
+                        <td class="num">2 817 381</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Fortaleza</td>
+                        <td class="num">2 428 708</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Salvador</td>
+                        <td class="num">2 417 678</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Belo Horizonte</td>
+                        <td class="num">2 315 560</td>
+                    </tr>
+            
+                    <tr>
+                        <td >Manaus</td>
+                        <td class="num">2 063 689</td>
+                    </tr>
+            
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td>Numero</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de Janeiro</td>
+                            <td class="num">6 211 223</td>
+                        </tr>
+                
+                        <tr>
+                            <td>São Paulo</td>
+                            <td class="num">11 451 999
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>Brasília</td>
+                            <td class="num">2 817 381</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Fortaleza</td>
+                            <td class="num">2 428 708</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Salvador</td>
+                            <td class="num">2 417 678</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Belo Horizonte</td>
+                            <td class="num">2 315 560</td>
+                        </tr>
+                
+                        <tr>
+                            <td >Manaus</td>
+                            <td class="num">2 063 689</td>
+                        </tr>
+                
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>Numero</td>
+                            </tr>
+        </tfoot>
+
+   </table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio real de tabela</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: bisque;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 600px;
+            
+        }
+
+        thead {
+            border: 1px solid black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+
+        td {
+            text-align: center;
+        }
+
+        caption {
+            background-color: rgb(80, 80, 80);
+            color: white;
+            padding: 5px;
+        }
+
+        .nomes {
+            background-color: brown;
+            color: white;
+        }
+
+        td, th.filmes {
+            background-color: rgb(165, 114, 42);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>Filmes prefiridos por cada gênero</caption>
+        
+        <thead>
+            <tr>
+            <th scope="col">Grupo</th> <!-- scope parav apenas uma coluna-->
+            <th class="nomes" scope="col">Nomes</th> >
+            <th class="filmes" colspan="3" scope="colgroup">Filmes</th> <!-- Escopo para um grupo de colunas-->
+        </tr>
+        </thead>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th> <!-- Escopo para um grupo de linhas-->
+            <td class="nomes">Ana maria Santos</td>
+            <td class="filmes">ALien</td>
+            <td class="filmes">Rambo</td>
+            <td class="filmes">Vingadores</td>
+        </tr>
+        <tr>
+            <td class="nomes" >Beatriz</td>
+            <td class="filmes" >Hulk</td>
+            <td class="filmes" >Batman</td>
+            <td class="filmes" >Matrix</td>
+        </tr>
+        <tr>
+            <td class="nomes">Claudia Melo</td>
+            <td class="filmes" >Barbie</td>
+            <td class="filmes" >Minions</td>
+            <td class="filmes" >Princesas</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th> <!-- Escopo para um grupo de linhas-->
+
+            <td class="nomes">Claudio</td>
+            <td class="filmes" >+22</td>
+            <td class="filmes" >Savage</td>
+            <td class="filmes" >50cent</td>
+        </tr>
+        <tr>
+            <td class="nomes">Marcos</td>
+            <td class="filmes">Folclore</td>
+            <td class="filmes">Eminem</td>
+            <td class="filmes" >Efootball</td>
+        </tr>
+
+        <tr>
+            <td class="nomes">Vagner</td>
+            <td class="filmes">Fifa</td>
+            <td class="filmes">PS4</td>
+            <td class="filmes">Make Money</td>
+        </tr>
+    </table> 
+
+    <h2>eSCOPOS DE GRUPOS</h2>
+    <P>Há duas tags de definição para colunas e linhas, semanticamente explicando o objetivo daquela coluna, é o que chamamos de escopos e as tags são: <br>
+        scope="col" --> para colunas <br>
+        scope="row" --> para linhas <br>
+        scope="colgroup" --> para grupo de colunas <br>
+        scope="rowgroup" --> para grupo de linhas
+    </P>
+</body>
+</html>

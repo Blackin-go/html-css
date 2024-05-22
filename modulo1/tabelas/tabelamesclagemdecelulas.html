@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mesclagem de celulas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 300px;
+            position: relative;
+            border-collapse: collapse;
+        }
+
+        td  {
+            color: black;
+            font-weight: bolder;
+            background-color: cadetblue;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center ;
+
+        }
+
+        td.marc {
+            background-color: burlywood;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <h2>Uma tabela possui colunas e linhas, e em certos momenos, um dado precisara ocupar mais colunas ou mais linhas. E a forma de resolver isso é usando  as tags -- colspan -- e --rowspan-- seguido de seu numero de definição</h2>
+    <table>
+        <tr>
+            <td>1</td>
+            <td class="marc" colspan="2">1</td> <!-- Colspan significa quantas colunas um dado ira ocupar na tabela-->
+            
+        </tr>
+        <tr>
+            
+            <td class="marc" colspan="3">2</td>
+        </tr>
+        <tr>
+            <td class="marc" rowspan="2">3</td> <!-- Rowspan significa quantas linhas um dado ira ocupar na tabela-->
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            
+            <td>4</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table>
+        <tr>
+            <td class="marc" colspan="4">1</td>
+            <td rowspan="3">5</td>
+        </tr>
+        <tr>
+            <td class="marc" rowspan="4">4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            
+        </tr>
+        <tr>
+            <td class="marc" colspan="4">7</td>
+            
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td class="marc" rowspan="2">3</td>
+            <td>4</td>
+            
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            
+        </tr>
+        <tr>
+            <td class="marc" rowspan="2">11</td>
+            
+            <td class="marc"  colspan="2">13</td>
+            <td>14</td>
+            
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
