@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando colunas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+            border: 1px black solid;
+            text-align: center;
+        }
+
+        th {
+            color: black;
+            border: black solid 1px;
+            inline-size: 150px;
+            block-size: 50px;
+        }
+
+        td {
+            border: black 1px solid;
+            inline-size: 150px;
+            block-size: 50px;
+        }
+
+        col.nome {
+            background-color: blueviolet;
+        }     
+        
+        colgroup.pais {
+            background-color: cadetblue;
+        }
+
+        colgroup.filmes {
+            background-color: crimson;
+        }
+
+        colgroup.series {
+            background-color: violet;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando colunas</h1>
+
+    <table>
+
+        <colgroup> <!--Usaremos essa tag colgroup para personalizar uma coluna inteira-->
+            <col class="nome">
+            <colgroup class="pais" span="2"><!-- span significa a quantidade de colunas selecionadas em caso de grupos de colunas ou colgroup-->
+            <colgroup class="filmes" span="3">
+            <colgroup class="series" span="3">
+        </colgroup>
+        <caption>Tabela de clientes</caption>
+        <thead>
+            <tr>
+                <th colspan="1" scope="col">Nome</th>
+                <th colspan="2" scope="colgroup">Pais</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+                <th colspan="3" scope="colgroup">Series</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amanda</td>
+                <td>Fernanda</td>
+                <td>Carlos alberto</td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>Adriana </td>
+                <td>Berola</td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>Julio</td>
+                <td>Adriana </td>
+                <td>Filme 1</td>
+                <td>FIlme 2</td>
+                <td>Filme 3</td>
+                <td>Série 1</td>
+                <td>Série 2</td>
+                <td>Série 3</td>
+                
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="8">Total de clientes</th> <!--COlgroup significa que esse guarda um conjunto de grupos-->
+                <td>3(sete)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root { /* Esta tag é uma váriável para facilitar na hora da edição do design do site*/
+    --color1: black;
+    --color2: rgb(172, 0, 0);
+    --color3: rgba(214, 239, 255, 0.849);
+
+    --font-padrão: Arial, Verdana, Helvetica;
+    --fonte-destaque: Arial;
+    --fonte-paragrafo: Arial;
+}
+
+body {
+    font-family: var(--font-padrão); /* VAR significar que a variável foi adicionada*/
+    color: var(--color3);
+}
+
+h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--color1);
+}   
+
+p {
+    color: var(--color2);
+}
+

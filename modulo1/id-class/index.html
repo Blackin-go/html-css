@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Seletores personalizados em CSS</title>
+</head>
+<body>
+    <main>
+
+        <div class="div1">
+
+            <h1 id="principal"> Setetores ID(#) e Class(.)</h1>
+
+            <p class="pi">Identificaremos um determinado elemento único atravavés de ID e agrupar varios elementos com caracteristicas semelhantes através de class,faremos isso em  HTML e CSS para localização do objeto. </p><hr>
+
+            <p class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, quia delectus. Quos dignissimos praesentium delectus aliquid expedita excepturi, iusto maxime corporis perferendis recusandae perspiciatis numquam, provident magni dolorum beatae facere!</p>
+
+            <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, totam corporis. Quam voluptate deleniti architecto quidem sunt. Sequi voluptate eos tempore magni officia facilis magnam sit harum, autem hic commodi?</p>
+            <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod labore, voluptas vel minima impedit. Omnis recusandae, totam nobis similique, rerum, sequi dignissimos nulla placeat sapiente suscipit in culpa soluta?</p><br><hr>
+        </div>
+
+        <div class="div2"> <!--è possivel adicionar mais de uma classe em determinado elememento, porem é importante saber que o ID sobrepôe o CLASS, entao toda vez que ouver o id e o class em um elemente quem vem primeiro é o class, e se for dois class no mesmo elemento, o primeiro class sobrepoe o outro-->
+
+            <h2>Usando CSS em várias páginas para facilitar a edição</h2><br>
+            
+            <p>O CSS atrvés criado para esta página devera ser adicionado em todas as outras páginas, a fim de falicilitar a edição das páginas mais facilmente futuramente</p><br>
+            <button class="botao"><a href="pagina2.html" target="_blank"> Ir à pagina</a></button><br>
+            
+
+        </div>
+
+        <div class="div2">
+            <h2 >Poder dos identificadores</h2>
+
+            <p>através desses elementos unicos conseguimos personalizar cada ítem exclusivamente</p>
+        </div>
+
+        <div class="div3">
+            <h2>Pseudo-classes CSS</h2>
+            <p>Os pseudo classes altera uma classe completa como um link por exemplo, veja abaixo ao passar o mouse sobre o link, sempre seguido de dois pontos ( : )</p>
+
+            <div class="div9"><a href="" class="classe">Textdelink</a></div>
+                <ul>
+
+                    <li><abbr title="">: hover</abbr>  </li>
+                    <li><abbr title="">: visited</abbr> </li>
+                    <li><abbr title="">: active</abbr> </li>
+                    <li><abbr title="">: checked</abbr> </li>
+                    <li><abbr title="">: empty</abbr> </li>
+                    <li><abbr title="">: focus</abbr> </li>
+                </ul>
+        </div>
+
+        <div class="div4">
+
+            <h2>Pseudo-elemento CSS</h2>
+
+            <p>Os pseudo elementos agem como um filho do elemento, alteram parte do elemento, diferente do pseudo classe que altera completamente o elemento, como a cor por exemplo. sempre depis de 2x dois pontos ( :: ), veja abaixo.</p>
+            <ul>
+
+                <div>
+                    <p class="elemento">Teste peseudo elemento</p>
+                </div>
+
+                <li>::before </li> <!-- Antes do elemento-->
+                <li>::after </li> <!--Depois do elemento-->
+                <li>::first-letter </li>
+                <li>::first-line</li>
+            </ul>
+        </div>
+
+        <div class="div5">
+
+            <h2>Vamos ver as funcionalidades personalizando links atraves de pseudo classes e elementos</h2>
+            <p>Se quiser saber sobre tais funcionalidades visite o side do <a href="https://www.w3c.br/" class="link">Escritório w3c no Brasil</a></p>
+        
+
+            <p>Para acessar o facebook acesse o<a href="https://www.facebook.com/" target="_blank"  class="link"> site do facebook</a></p>
+
+            <p>Veja as diferenças acima, editamos em css a cor do sites visitado e não visitado, e também quando passamos o mouse em cima do link ele muda de cor</p>
+
+            <p>Adicionamos elemento de pseudo elemento, inserindo fundo preto e cor da letra diferente da que já estava adicionada</p>
+
+        </div>
+        
+    </main>
+</body>
+</html>

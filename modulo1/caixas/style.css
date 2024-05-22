@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#principal {
+    background-color: rgb(194, 216, 0);
+    block-size: 100px; /* Alturada caixa */
+    inline-size: 50%; /* A definição desta largura diz que a caixa só ocupara 50% do total da caixa ao qual ela está aninhada, no caso da caixa MAIN*/
+    padding: 5px 5px 5px 5px; /* O padding é o distanciamento do conteudo e da borda */
+
+    border: solid 1px black; /* Borda da caixa */
+    margin: 0px 0px 0px 40px; /* mrgin é a POSIÇÂO da caixa e como ela se comporta em determinadas telas, neste caso, está zer no topo, à direita e a baixo, apenas 20px na esquerda*/
+    
+}
+
+main {
+    background-color: rgb(214, 214, 214);
+    max-inline-size: 90%;
+    margin: auto;
+    border: solid 2px black;
+}
+
+html {
+    background-color: aqua;
+    
+}
+
+body {
+    background-color: blue;
+    max-inline-size: 90%;
+    block-size: 90%;
+    margin: auto;
+    
+}
+
+a {
+    background-color: burlywood;
+    color: black;
+    text-decoration: none;
+
+}
+
+html > body > main > .secundario {
+    background-color: rgb(196, 0, 0);
+    block-size: 200px; 
+    inline-size: 50%;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+.terceiro {
+    background-color: rgb(173, 0, 0);
+    max-inline-size: 90%;
+    block-size: 100px;
+    margin: auto;
+    border: solid 1px black;
+    padding: 10px;
+
+}
+
+p {
+    background-image: linear-gradient(to right, rgb(49, 49, 255), rgb(167, 0, 0), yellow);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    text-align: center; /* Alinhamento do texto */
+    padding: 10px;
+    block-size: 50px;
+    inline-size: 40%;
+    border: 2px rgb(39, 167, 0) solid;
+    margin: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.596) 2px 2px 16px; /* Esta é uma tag de sombra da caixa, definido por Cor, valor de direita, valor de baixo e força da sombra*/
+    border-radius: 20px 10px 10px 5px; /* Arrendondamento de caixa, separado com quatro valoes */
+}
+
+.bola {
+    background-color: red;
+    block-size: 100px;
+    inline-size: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding-block-start: 15px;
+}
+
+.bordaimage {
+    background-color: cadetblue;
+    block-size: 50px;
+    inline-size: 100px;
+    margin: auto auto auto 20px;
+    text-align: center;
+    padding: 10px;
+}

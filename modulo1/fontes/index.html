@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); /*tag para puxar fonte externa*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poetsen+One&display=swap');
+
+
+        @font-face {
+    font-family: 'smile', 'sans-serif';
+    src: url(fontes/abalonesmile.otf) format('opentype'), url(fontes/labele.ttf); /*importando fonte local ( computador )*/
+                /*tipos de format de fonte
+
+                pentyope (otf)
+                truetype (ttf)
+                embedded- opentype
+                truetype-att ( apple advanced typography)
+
+                */
+          
+        }
+
+        body {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 10px; /* Usado para das espaço no inicio de frases e textos*/
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        .san {
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+
+        .mono {
+            font-family: monospace;
+        }
+
+        .script {
+            font-family: 'La Belle Aurore';
+        }
+
+        .display {
+            font-family: 'Rubik Storm', cursive;
+        }
+
+        ol {
+            font: italic bolder 12px Arial, 'san-serif';
+        }
+
+        .nova {
+            font-family: "Poetsen One ", 'Noto Sans JP';
+        }
+
+        /* medidas absolutas de fontes
+        cm, mm, in, px, pt, pc
+        
+        medidas relativas
+        em, rem, vw, vh, %
+        
+        Os mais usados para definir o tamanhon das fontes é:
+        px e em */
+        
+        /*weight( peso ), width ( largura ), height ( altura )*/
+
+        /*SHORTHANDS
+        
+        shorthands sao atalhos para css, para facilitar e poupar linhas de codigo em css, veja exemplo
+        
+        p {
+            font-weight
+            font-size
+            font-family
+            font-color
+        }( sem shorthands )
+        
+        p{
+            font: italic bold 1em arial, helvetica
+        } ( exemplo de shorthands )
+        
+        mas a ordem do shorthands é muito importante sendo
+        
+        font-style
+        font-variant
+        font-weight
+        font-size, line-height
+        font-family*/
+
+
+    </style>
+</head>
+<body>
+    <h1>Fontes</h1>
+
+    <h2>Fontes Serifadas abaxio</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque accusamus sapiente labore harum veniam vel asperiores obcaecati, sunt non impedit voluptatem placeat odio minima ad animi ullam? Cumque, dolores!</p>
+
+    <h2>Fontes san-serif abaixo</h2>
+
+    <p class="san">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tenetur nemo expedita vitae tempora placeat iusto fuga molestiae consectetur perspiciatis, iste exercitationem praesentium optio similique aliquid modi laborum ducimus tempore.</p>
+
+    <h2>fontes mono espaçadas</h2>
+
+    <p class="mono">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus inventore, sit cumque aliquam, neque officiis quam nisi sed ab optio iusto voluptas ut et accusantium id nihil cum blanditiis!</p>
+
+    <h2>Fontes handwriting</h2>
+
+    <p class="script">Fontes que imitam a escrita</p>
+
+    <h2>Fonte display</h2>
+
+    <p class="display">Fonte display</p>
+
+    <h2>Shorthand em Fontes</h2>
+
+    <p>Podemos resumir o codigo dessas fontes seguindo a seguinte ordem:
+        <ol type="1">
+            <li>style</li>
+            <li>variant</li>
+            <li>weigth</li> <!--Peso da fonte-->
+            <li>size</li> <!--Tamanho-->
+            <li>family</li> <!--Estilo da fonte-->
+        </ol>
+    </p>
+
+    <h2>Um pouco de alinhamento de textos</h2>
+
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis ducimus aperiam suscipit nam natus laudantium laboriosam eaque numquam, asperiores et, ab voluptas quidem libero quisquam, eum provident optio doloremque.</p>
+    <!--Perceba a diferenças de alinhamentos do texto, mas nunca personalizar em HTML e sim em CSS através de ID e CLASS-->
+
+    <p style="text-aling: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque accusantium magnam autem doloremque fuga at illo beatae magni exercitationem ipsa eveniet voluptate reprehenderit quis numquam temporibus a tempora voluptas?</p>
+
+    <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo numquam ipsam nostrum, adipisci distinctio natus saepe cum corrupti aperiam quam totam ex sint commodi, earum tempora dolorum sapiente recusandae?</p>
+
+    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eius tempore alias eos illo! Modi sapiente fugit nulla, laborum ducimus ipsum quibusdam a similique veritatis alias odit ullam eveniet commodi?</p>
+
+    <h2 class="nova">Nova fonte</h2>
+
+
+</body>
+</html>

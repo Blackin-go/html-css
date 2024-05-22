@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis, Audio e Video</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+
+    <p>Abaixo, vamos inserir três imagens com tamanhos do menor ao maior, e elas apareceram em cada dispositivo conforme o tamanho da tela.</p>
+
+    <picture> <!--tag para midias-->
+
+        <source media="(max-width: 500px)" srcset="imagens/300px.png" type="image/png"> <!--Toda vez que uma tela tiver no máximo 500px a imagem com 300px aparecerá-->
+
+        <source media="(max-width: 900px)" srcset="imagens/700px.png" type="image/png"> <!--Toda vez que uma tela conter no máximo 900px a imagenm de 700px aparecerá-->
+
+        <img src="imagens/1300px.png" alt="imagem jpg"> <!--Esta imagem aparecerá por padrão em todos os navegadores-->  
+    </picture>
+
+    <p>A partir dessas configurações, serão carregadas imagens conforme o tamanho da tela, a imagem padrão está dentro de iIMG enquanto as demais, conforme a tela diminui, serão adicionadas logo em segquência em source, não se deve inverter essa ordem, sempre da menor para a maior</p>
+    <br>
+    <hr>
+
+    <h2>Audio</h2>
+    <audio preload="none" controls >
+        <source src="audios/midia.mp3" type="audio/mpeg"> <!-- O source serve para adicionar variaveis para compatibilidade de sispositivos, pois nem todos os navegadores são iguais e reproduzem os mesmo arquivos-->
+        <source src="audios/midia.ogg" type="audio/ogg"> <!-- É necessário a definição do type do arquivo-->
+        <source src="audios/midia.wav" type="audio/wav">
+    </audio>
+
+    <p>caso seu navegador não suporte o áudio <a href="audios/midia.mp3" target="_blank" rel="external" download="audios/midia.mp3" type="audio/mpeg">baixá-lo aqui.</a></p> <!-- sempre deixe a opção de baixar audio pois nem todos os navegadores são compativeis com o arquivo-->
+    <hr>
+
+    <h2>Video</h2>
+
+    <video width="600px" poster="Imagemcapa.png"> <!-- Poster é a tag de tumbnail-->
+        <source src="video.web" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.org" type="video/ogg">
+        <!-- Tenha vários formatos de vídeos pois os navegadores são diferentes-->
+    </video>
+
+    <h2>adicionando video atraves do youtube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4-8mHKULo_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Com certeza a melhor forma de incluir vídeos em seu site é através do iframe, pois isso evita gasto excessivo de dados e mais velocidade no site-->
+
+</body>
+</html>

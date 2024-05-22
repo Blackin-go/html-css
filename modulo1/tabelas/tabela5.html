@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th, tr, td {
+            text-align: center;
+            border: 1px solid black;
+            inline-size: 90px;
+            padding: 5px;
+        }
+
+        div#conteiner { /* usamos uma div para conter a tabela */
+            overflow-x: auto; /* overflow para limitar a rolagem somente dentro da div */
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas responsivas</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit beatae vel laboriosam nulla ratione perferendis nam quisquam labore ut assumenda. Possimus aliquid incidunt vero amet tempore rerum facere sequi assumenda!</p>
+
+    <div id="conteiner">
+        <table>
+            </colgroup>
+            <caption>tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>jan</th>
+                    <th>fev</th>
+                    <th>mar</th>
+                    <th>abr</th>
+                    <th>mai</th>
+                    <th>jun</th>
+                    <th>jul</th>
+                    <th>ago</th>
+                    <th>set</th>
+                    <th>out</th>
+                    <th>nov</th>
+                    <th>dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv 42 pol</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>33</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Celular Sansung</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>33</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Roteador wifi</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>33</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Titan 160</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>33</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Computagor gamer</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>33</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

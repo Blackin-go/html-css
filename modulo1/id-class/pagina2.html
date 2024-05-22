@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página dois</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS
+            
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+            
+        */
+        
+        * {
+            margin: 0%;
+
+        }
+        
+        body{
+            background-color: white;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            background-color: blue;
+            color: white;
+            margin-bottom: 5px;
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            
+        }
+
+        div {
+            background-color: rgb(67, 67, 67);
+            height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: auto;
+            
+
+        }
+
+        p {
+            background-color: blue;
+            margin: auto;
+            color: white;
+            padding: 5px 5px 5px 5px;
+            text-align: center;
+            margin-top: 5px;
+            max-width: 300px;
+
+        }
+
+        a {
+            color: white;
+        }
+
+        div:hover {
+            background-color: chocolate;
+        }
+
+        div > p {
+            display: none;
+
+        }
+        
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: rgb(27, 255, 160);
+
+        }
+
+        li {
+            
+            color: rgb(184, 184, 184);
+
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        a:visited { /*Pseudo classes de decoração para links visitados*/
+            color: brown;
+
+        }
+
+        .voltar:visited {
+            color: beige;
+        }
+
+        a:hover { /*pseudo classe de decoração Para quando passar o mouse por cima desse link*/
+            color: cadetblue;
+
+        }
+
+        a:hover { /*pseudo de decoração para quando clicar no link */ 
+
+
+        }
+
+        a::after { /* Usado para epois de algum elemento*/
+            content: '(link)';
+            background-color: blue;
+            color: white;
+        }
+
+        a::before{ /*Usado para depois de algum elemento*/
+            content: '(link)';
+            background-color: blue;
+            color: white;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Tete de pseudo classes</h1>
+    
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3
+        <p>4</p>
+    </div>
+    
+
+    <p><a href="index.html" class="voltar">Voltar para página 2</a></p>
+
+    <h2>Personalizando links</h2>
+
+    <ul>
+        <li><a href="https://www.facebook.com/" target="_blank">Testando personalização de link</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Testando personalização de link</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Testando personalização de link</a></li>
+    </ul>
+
+    <h2>Pseudo Elemento</h2>
+    
+
+</body>
+</html>

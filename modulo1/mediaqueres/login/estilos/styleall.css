@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) { 
+    /* Configuração tela TABLET */
+
+    section#login {
+
+        width: 700px;
+        height: 500px;
+        transition: width 0.3s;
+    }
+
+    div#imagem {
+        float: left;
+        width: 200px;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+        transition: width 0.3s;
+    }
+
+    div#form {
+        float: right;
+        width: 490px;
+        
+        transition: width 0.3s;
+    }
+
+    form {
+        transition: 0.1s;
+    }
+
+}
+
+@media screen and (min-width: 1200px) { 
+    /* Configuração TELAS GRANDES */ 
+
+
+    section#login {
+
+        width: 1000px;
+        height: 500px;
+    
+    }
+
+    div#imagem {
+        float: left;
+        width: 600px;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+
+    div#form {
+        float: right; /* Tag que define a posição da caixa, neste caso definido na direita */
+
+        width: 390px; /* TAg para definir a largura da caixa, lembre-se que o tamanho deve ser sempre inferior ao tamanho total da caixa, ou ela será quebrada para uma linha a abaixo -- Veja que a soma desta caixa ( 350px) com a primeira caixa( 650px) da um total de 1000px, fazendo com que as duas fiquem alinhadas dentro da caixa section*/
+    }
+
+        
+}

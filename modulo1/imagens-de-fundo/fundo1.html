@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>definindo fundo</title>
+    <style>
+
+        body {
+            background-image: url(imagens/wallpaper001.jpg); /* tag de imagem de fundo*/
+        }
+        div.quadrado {
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border-radius: 7px;
+        }
+
+        /*Veja três formas de definir o fundo de uma imagem baixo*/
+
+        div#q1 {
+            background-color: rgb(189, 119, 255); /* Fundo padrão com cor*/
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to top, rgb(0, 94, 0), rgb(65, 255, 65)); /*Fundo degrade*/
+        }
+
+        div#q3 {
+            width: 800px;
+            height: 800px;
+            background-image: url(imagens/mascote.png); /*FUndo com imagens, porem vale observar que a imagem nao esta completa na tela, e sim se repetindo, veja a baixo como configurar para que ela vire uma imagem unica sem repetição*/
+        }
+
+        div#q4 {
+            width: 800px;
+            height: 800px;
+            background-image: url(imagens/mascote.png);
+            background-size: 800px 800px; /*Definição do tamanho do fundo começando pela largura(width X )  e altura(height Y)  */
+            background-repeat: no-repeat; /*Isso significa que a imagem de fundo nao vai se repetir como a de cima*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quadrado" id="q1"></div>
+
+    <div class="quadrado" id="q2"></div><br>
+
+    <div class="quadrado" id="q3"></div><br>
+
+    <div class="quadrado" id="q4"> </div><br>
+
+
+</body>
+</html>

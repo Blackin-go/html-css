@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/stylecelular.css"> <!--COnfiguração principal-->
+    <link rel="stylesheet" href="estilos/styleall.css"><!--Configuração demais aparelhos-->
+    
+</head>
+<body>
+    <header>
+        <h1>Criando um menu responsivo ( Hamburguinho )</h1>
+        <i id="burg" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+                <ol>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Futebol</a></li>
+                    <li><a href="">Aulas</a></li>
+                    <li><a href="">Fofocas</a></li>
+                </ol>
+            </menu>
+    </header><hr>
+    <main>
+        <section>
+            <h2>testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloribus nemo placeat eligendi consectetur dicta nam expedita qui totam voluptate inventore saepe, iure asperiores consequatur commodi! Mollitia distinctio praesentium sequi?</p><br><hr><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae laudantium quod ab ipsa maiores. Libero esse sequi eveniet. Nulla exercitationem inventore eveniet ea dolores praesentium dicta doloremque omnis perspiciatis?</p>
+        </section>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') { /* Aqui diz que se o menu (itens) estiver aparecendo ( block)*/
+                itens.style.display = 'none' /*  quando eu clicar ele ocultará ( none ) */
+            } else {
+                itens.style.display = 'block'} /* Porém, quando o menu estiver oculto, se eu clicar ele aparecerá (block) */
+        }
+    </script>
+</body>
+</html>

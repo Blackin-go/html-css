@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, #616161, #444444, #202020);
+            margin: auto;
+            
+        }
+
+        body:hover {
+            background-image: linear-gradient(to left, #202020, #444444, #616161);
+        }
+
+        h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+
+        p {
+            margin-block-start: 100px;
+            text-align: center;
+            color: darkslategrey;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        .video {
+            max-inline-size: 500px;
+            max-block-size: 500px;
+            margin: auto;
+            border: solid white 1px;
+            text-align: center;
+
+        }
+
+        .botao {
+            padding-block-start: 10px;
+            color: darkslategrey;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        button {
+            background-image: linear-gradient(to right, rgb(196, 196, 196), #2b2b2b);
+            border-radius: 10px;
+            border: solid 1px white;
+            block-size: 26px;
+            inline-size: 150px;
+        }
+
+        button > a {
+            margin: auto;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-image: linear-gradient(to left, #c4c4c4, #2b2b2b);
+            
+        
+        }
+
+        .paragrafo {
+            color: white;
+            margin: 10px 0px 10px 0px;
+        }
+
+        .paragrafo > a {
+            color: white;
+            text-decoration: none;
+            background-color: cornflowerblue;
+            padding: 2px;
+            border-radius: 10px;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Clique no vídeo abaixo</h1>
+    <p class="paragrafo">Você pode ver outros como este <a href="">aqui</a></p>
+
+    <div class="video">
+        <iframe width="500pxpx" height="400px" src="https://www.youtube.com/embed/qJYpglFr2kA" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+    </div>
+    <p class="botao"><button><a href="./index.html">VOLTAR</a></button></p>
+</body>
+</html>

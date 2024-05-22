@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.3em;
+    line-height: 1.2em; /* Espaçamento entre linhas */
+}
+
+h1 {
+    background-color: rgb(158, 83, 255);
+}

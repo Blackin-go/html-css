@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'delagothicone'; /*Fontes na maquina, ou seja, local*/
+    src: url(fontes/DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'chango';
+    src: url(fontes/Chango-Regular.ttf);
+}
+
+body {
+    background-color: rgb(207, 207, 207);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    block-size: 140px;
+    text-align: center;
+    margin: auto;
+    inline-size: auto;
+    text-size-adjust: auto;
+}
+
+header > p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: small-caps;
+     /* trasforma todas as letras em maiusculas, porem as iniciais maiores que as demais */
+    
+}
+
+h1 {
+    text-align: center; /*Mesmo que max-width, inline-size é a mesma coisa que width, que se refere a largura horizontal*/
+    font-family: 'delagothicone';
+    padding-block-start: 40px;
+    padding-block-end: 10px;
+    font-size: 3.5vw; /*font-size: 2.1vw; este define o tamanho da fonte conforme o tamanho da view porte*/
+    text-transform: small-caps; /* trasforma todas as letras em maiusculas, porem as iniciais maiores que as demais */
+}
+
+.escritor {
+    margin: 0px;
+}
+
+div.quadrado2 {
+    padding: 3px;
+    margin: auto;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'chango', Arial, Helvetica, sans-serif;
+    line-height: 2em; /*Espaço entre as linhas*/
+    
+   ;
+    
+}
+
+p > a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'delagothicone';
+    font-size: 0.9em;
+}
+
+p > a:hover {
+    background-color: #00b7ff;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+main {
+    background-color: rgb(255, 170, 170);
+    max-inline-size: 800px; /*Mesmo que max-width, inline-size é a mesma coisa que width, que se refere a largura horizontal*/
+    margin: auto;
+    inline-size: auto;
+}
+
+
+div {
+    background-color: #ebebeb5e;
+    block-size: 300px;
+    inline-size: auto;
+    position: relative;
+    margin: auto;
+    
+}
+
+div.quadrado {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.034);
+    block-size: 300px ;
+    inline-size: 100%;
+    margin: auto;
+}
+
+
+div.quadrado2 {
+    block-size: 250px;
+    inline-size: 250px auto;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    position: absolute;
+    background-color: #ffffff6e;
+
+}
+
+div.quadrado2#div2 {
+    block-size: 250px;
+    inline-size: 250px;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    position: absolute;
+    background-color: #0000006e;
+    color: white;
+}
+
+
+div.quadrado2#div3 {
+    block-size: 250px;
+    inline-size: 250px;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    position: absolute;
+    background-color: #00000000;
+    color: rgb(0, 0, 0); 
+}
+
+div.quadrado2#div1 {
+    block-size: 250px;
+    inline-size: 250px;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    position: absolute;
+    background-color: #00000000;
+    color: rgb(2, 2, 2);
+}
+
+
+
+div.quadrado2#div4 {
+    block-size: 250px;
+    inline-size: 250px;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    position: absolute;
+    background-color: #00000071;
+    color: white;
+}
+
+
+
+div.quadrado#cx2 {
+    background-image: url(imagens/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+div.quadrado#cx1 {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%; 
+}
+
+div.quadrado#cx4 {
+    background-image: url(imagens/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%; 
+}
+
+div.quadrado#cx3 {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%; 
+}
+
+footer {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    block-size: 50px;
+    inline-size: 800px;
+    inline-size: auto;
+    text-align: center;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-block-start: 10px;
+}

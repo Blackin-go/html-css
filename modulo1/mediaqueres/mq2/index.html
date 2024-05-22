@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <link rel="stylesheet" href="estilos/all.cs" media="all"> <!--COnfiguração padrão para todas as telas-->
+
+    <link rel="stylesheet" href="estilos/retrato.cs" media="screen and (orientation: portrait)" > <!--Configuração especial para telas em formato de retrato-->
+
+    <link rel="stylesheet" href="estilos/paisagem.cs" media="screen and (orientation: landscape)" > <!--Configuração especial para telas em formato de paisagem-->
+
+    <style>
+        /* Esta declaração é para todas as orientações de tela */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            block-size: 100vh;
+            inline-size: 100vw;
+            background-color: #1b3bee;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /* Esta declaração é para telas em formato de retrato */
+        @media screen and (orientation: portrait) { /* Esta é a configuração para projetos pequenos onde não é necessário varios css*/
+            body {
+                background-image: url(imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+        /* Esta declaração é para telas em formato de paisagem */
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url(imagens/cev-landscape.jpg);
+                background-position: left top;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudando a orientação do dispositivo</h1>
+</body>
+</html>

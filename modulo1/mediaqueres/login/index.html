@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login responsiva com HTML e CSS</title>
+    <link rel="stylesheet" href="estilos/style.css"> <!--Formatação padrão-->
+    <link rel="stylesheet" href="estilos/styleall.css"> <!--Formatação all dispositivos-->
+</head>
+<body>
+    <main>
+        <section id="login">
+
+            <div id="imagem"></div>
+
+            <div id="form">
+
+                <h1>login</h1>
+
+                <p class="paragrafo">Seja bem-vindo novamente, Faça login para acessar sua conta</p><br>
+
+                <form action="login.php" method="post" autocomplete="off">
+
+                        <div class="campo">
+                            <input type="text" name="usu" id="iusu"  autocomplete="off" maxlength="20" required placeholder="@usuário"></div>
+                    
+                        <div class="campo">
+                            <input type="password" name="senha" id="isenha" autocomplete="off" maxlength="20" minlength="8" required placeholder="Senha">
+                        </div>
+
+                    <p id="enviar">
+                        <input type="submit" value="Entrar" class="botaoenviar">
+
+                        <a href="#" class="recuperarsenha"><abbr title="Se você esqueceu sua senha, clique aqui">Esqueci a senha?</abbr></a>
+                    </p>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

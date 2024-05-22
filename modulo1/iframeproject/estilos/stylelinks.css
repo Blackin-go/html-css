@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#redes {
+    text-align: end;
+}
+
+section#redes img{
+
+    block-size: 50px;
+    inline-size: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.466);
+    box-sizing: border-box; /* Isso faz com quem a borda faça parte da caixa */
+    margin-block-start: 10px;
+    margin-inline-end: 10px;
+    
+
+}
+
+section#redes img:hover {
+    border: 2px solid white;
+    transform: translate(-2px, -2px);
+}
+

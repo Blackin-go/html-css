@@ -1,0 +1,179 @@
+@charset "UTF_8"; /*Esta tag significa que você poderá usar simbolos e Ç*/
+
+* {
+    margin: 1px;
+}
+
+body {
+    background-color: #013f5c2a;
+}
+
+.div1 {
+    background-color: #d3d3d3;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding: 1px;
+}
+
+#principal {
+    background-color: #cf3737;
+    max-inline-size: 700px;
+    block-size: 50px;
+    text-align: center;
+    padding-block-start: 5px; /* padding top*/
+}
+
+.pi {
+    background-color: rgb(0, 197, 131);
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.a {
+    background-color: burlywood;
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.b {
+    background-color: chocolate;
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.c {
+    background-image: linear-gradient(to right, rgb(223, 0, 137), rgb(119, 0, 93), rgb(96, 0, 151));
+    font-weight: 600;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    text-align: justify;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div2 {
+    background-color: #868686;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div3 {
+    background-color: #0088c7;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-start: 10px;
+    padding-block-end: 10px; /* padding bottom*/
+}
+
+.div4 {
+    background-color: #013f5c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-end: 10px; /* padding bottom*/
+    padding-block-start: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 5px;
+}
+
+.botao {
+    margin: center;
+    text-align: center;
+    background-color: white;
+    color: #650094;
+}
+
+.botao:hover {
+    color: white;
+    background-color: #0088c7;
+    
+
+}
+
+.div5 {
+    background-color: #a5008f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-inline-size: 700px;
+    margin: auto;
+    padding-block-end: 10px; /* padding bottom*/
+    padding-block-start: 10px; 
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #650094;
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+main {
+    background-color: rgb(211, 211, 211);
+    block-size: 730px;
+    border: 20px;
+}
+
+.div6 {
+    background-color: darkgreen;
+}
+
+.classe {
+    background-color: #650094;
+    color: rgb(232, 228, 255);
+}
+
+.classe:hover {
+    background-color: white;
+    color: black;
+}
+
+.div9 {
+    background-color: cadetblue;
+    block-size: 40px;
+    padding: 50px;
+ }
+
+ .elemento {
+    background-color: #0088c7;
+    block-size: 40px;
+    padding: 20px;
+}
+
+.elemento::before{
+    content: "(";
+}
+
+.elemento::after {
+    content: ") eu adicionei isso sem alterar o elemento, apenas adicionando mais elementos através de pseudo elementos";
+}
+

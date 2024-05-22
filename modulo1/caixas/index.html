@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelos de caixa</title>
+
+    <style>
+        .ultima { /* Todas as shorthands*/
+            background-color: cadetblue;
+            text-align: center;
+
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid black;
+
+            padding: 10px 10px 10px 10px;
+
+            margin: 20px auto 20px auto;
+
+            outline: 5px dashed salmon;
+
+        }
+
+    </style>
+</head>
+<body>
+     <main class="main">
+
+         <div id="principal">Está é um display block, significa que é uma caixa fora de outra caixa que ocupa todo o espaço da tela</div>
+         
+         <div class="secundario"> As inline blocks <a href="">No caso desta mensagem marcada bem aqui</a> são inlines pois estão aninhadas destro das blocks display e se movimentam confome manda a caixa</div>
+
+         <p>Caixa com sombra teste</p>
+
+         <h2 class="bola">Caixa bola</h2> <!--Usamos 50% para fazer uma caixa ficar arredondada--> 
+
+         <div class="bordaimage">Bordas decoradas</div>
+                 
+     </main>
+     <h2>Tipos de caixa box level <!-- div, h1 ao h6, p, main, header, nav, article, aside, footer, form, video--> </h2>
+
+     <h2>Tipos  de caixa inline-level <!--span, a, code, small, strong, em, sup-sub, label, button, input, select --> </h2>
+
+      <h2 style="border: 10px solid rgb(88, 255, 62);">SHORTHANDS PARA bordas</h2> 
+
+      <!--SHORTHANDS para BORDAS seguem o seguinte padrão, 
+
+        border-width
+        border-style 
+        border-color 
+
+        border: 10px solid black;
+    -->
+
+      <h2 style="padding: 10px 5px 5px 5px;">SHORTHANDS PARA PADDING</h2>
+
+      <!--SHORTHANDS para PADDING seguem o seguinte padão
+    
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+    
+        -->
+
+        <h2 style="margin: 20px auto 20px auto;">SHORTHANDS PARA MARGIN</h2>
+
+        <!--da mesma forma que padding MARGIN segue a seguinte etapa
+        
+        margin-top
+        margin-right
+        margin-bottom
+        margin-left
+
+        podemos defini-lo de forma automatica na tela usando o MARGIN-AUTO, assim ele centralizara de forma automatica
+    
+        -->
+
+        <h2 class="ultima">Ultima caixa com todas as configurações</h2>
+
+
+ 
+</body>
+<div class="terceiro">esta é minha terceira block display, fora do div que não é a caixa principal e sim o html que é o principal local de marcação</div>
+</html>

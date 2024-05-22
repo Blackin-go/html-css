@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Alinhamnto vertical</title>
+    <style>
+        
+        body {
+            margin: auto; /*È bom deixar claro que o margin só posiciona a caixa no centro na horizontal, e agora aprenderemos como deixar a caixa na posição cenntral mas tambem em vertical*/
+            block-size: 97vh;
+            inline-size: 90%;
+        }
+        div#fora {
+            background-size: 100% 100%;
+            block-size: 97vh; /* VH significa toda altura visivel, ou seja, tudo que for definido com VH aparecerá no navegador independente do tamanho da tela conforme o valor definido */
+            background-image: url(imagens/target001.png);
+            background-color: rgb(197, 0, 0);
+
+            background-position: cover;
+
+            position: relative; /* as caixas naturalmente tem posicionamento relativo, essa tag é apenas para reforçar */
+
+            background-repeat: no-repeat;
+        }
+
+        div#dentro {
+            block-size: 200px;
+            inline-size: 200px;
+            background-image: url(imagens/wallpaper001.jpg);
+            position: absolute; /* Como esta caixa esta contida dentro de outra seu posicionamento deve ser absoluto, pois nao queremos que ela se movimente*/
+
+            inset-inline-start: 50%;  /*a partir de 50% se inicia o padding, PADDING-LEFT, o detalhe que só poderemos movimentar a caixa desta forma se esta caixa for definita com position-absolute */ 
+
+            inset-block-start: 50%; /* a partir de 50% se inicia o padding, PADDING-TOP */
+
+            transform: translate(-50%, -50%); /* TAG DE PADDING-LEFT E TOP DA CAIXA , Movimento da caixa */
+            border-radius: 20px; 
+            border: 2px solid rgb(252, 0, 147);
+
+            /* Esta é uma caixa interna e modificamos a posição dela dentro de outra caixa */
+        }
+    </style>
+</head>
+<body>
+    <div id="fora">
+
+        <div id="dentro">
+
+        </div>
+    </div>
+</body>
+</html>

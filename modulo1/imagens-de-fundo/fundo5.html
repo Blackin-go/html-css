@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>definindo o fundo da imagem</title>
+    <style>
+
+        body.quadrado {
+            border: 1px solid black;
+            border-radius: 2px;
+            background-image: url(imagens/wallpaper003.jpg);
+            height: 97vh; /*VH significa view port, ou seja total da tela*/
+            background-size: cover;
+            background-repeat: no-repeat; /*Uma das melhores opções para tamanho da imagem de fundo, pois se encaixa muito bem na maioria das telas*/
+            background-position: center center;
+        }
+
+        div {
+            margin: auto;
+            background-color: bisque;
+            width: 200px;
+        }
+
+
+        /*Há dois valores que podemos usar para o tamanho da imagem de fundo
+
+        backgroud-size: contain; 
+
+        que faz com que a imagem fique 100% na tela, porem se a imagem for menor que a tela, ainda sobrara espaço vazio na tela, entao isso na maior parte das vezes nao resolve
+        
+        background-size: 100% 100%;
+        
+        é outra forma de resolver o problem de tamanho da imagem de fundo, porem tambem é descartavel pois na maioria das vezes falta imagem*/
+
+        /*Perceba que com as configurações atuais, quando rolamos a tela para baixo a imagem de fundo se limita e o fundo volta a ficar com a cor padrão, iremos resolver isso nas proximas configurações na proxima pagina*/
+
+    </style>
+</head>
+<body class="quadrado">
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eveniet commodi architecto ab id nesciunt natus nostrum laudantium exercitationem, consectetur earum iusto, ipsum vitae recusandae ad quo, inventore maiores autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit ipsum voluptate iusto facere totam officia tenetur iure, est fuga obcaecati dolor soluta deleniti maxime, eaque laboriosam explicabo commodi placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi expedita voluptates nisi odio dolor sunt consectetur quia laudantium, a blanditiis fuga esse deleniti animi architecto ad cupiditate cumque iure officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque sed molestiae facere inventore, error ullam soluta cumque! Quia cumque pariatur harum debitis dolorum consectetur quidem est doloribus illo nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo architecto impedit molestias hic nihil ea, sed quasi facilis illum nostrum earum porro minima, fuga quam vitae saepe necessitatibus natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor explicabo porro provident odio at quibusdam. Iure quo consectetur est rerum, veritatis qui eos ipsum sunt vero provident, modi repudiandae? Lorem ipsum dolor, sit amet consectetur adip  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptate a hic iusto, numquam soluta ab dolore fuga aliquid? Consequatur dolore atque explicabo ducimus blanditiis repudiandae fugit vel eaque veritatis. t. Quo distinctio, rerum nesciunt hic error magnam sint, accusantium eligendi autem nisi quos ea molestiae impedit te Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque maiores quia accusantium facere hic doloribus tenetur, sed rerum quis consectetur esse nemo assumenda aspernatur est molestias. Suscipit, quaerat ipsam. netur voluptate fuga dolore atque totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia tenetur nam veritatis, officia ut sapiente earum natus, similique cum dolorem labore. Doloremque aperiam consequatur itaque at odio ut mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus nobis reiciendis sequi officiis dolore nihil alias, velit optio aliquid voluptate repellendus ipsa iusto nostrum, assumenda dolores corrupti quaerat consequatur. çLorem ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio labore repudiandae, soluta deleniti cumque itaque vero quibusdam odit voluptatem? Soluta distinctio quod dolor modi minima cum earum corrupti dicta.</p></div>
+    
+</body>
+</html>

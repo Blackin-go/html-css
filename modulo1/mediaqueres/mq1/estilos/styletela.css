@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Estilo para tela */
+
+* {
+    padding: 2px;
+    margin: 2px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    color: white;
+    padding-inline-start: 15px;
+    padding-block-start: 10px;
+    block-size: 50px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    background-color: chocolate;
+    color: black;
+}

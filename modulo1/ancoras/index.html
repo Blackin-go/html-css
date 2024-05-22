@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncora( Links )</title>
+</head>
+<body>
+
+    <h1>Ancoras( Links Internos / externos e Download) </h1>
+    <hr>
+
+    <h2>Link interno</h2>
+    <p>Para navegar entre uma página e outra, devemos criar um HYPERLINK, que chamamos de âncora que é feito através da tag <strong>(a href="">)</strong>, que tem como atributo o href que carrega o link por onde iremos navegar, veja exemplo:</p>
+
+    <p>Quero ir para o <a href="pag.html" hreflang="en" rel="next">Pagina teste</a></p> <!--rel=next significa indicar ao google que esa é a proxima pagina-->
+
+    <p>Podemos indicar qual o idioma do site ao qual está sendo direcionado atraves de ( hreflang="")</p> 
+    <hr>
+
+    <h2>Link Externo</h2>
+
+    <p>É interessandte saber que, no caso acima, estamos usando uma pagina do nosso proprio site e o cliente navegara entre elas, e iso nao terá problema algum, porem quando o cliente vai sair do nosso site, nós não queremos que ele saia da nossa pagina, resolveremos isso da seguinte maneira:</p>
+
+    <p><a href="https://web.facebook.com/" target="_blank" rel="external">Ir para o facebook </a>usando _blank</p>
+
+    <p><a href="https://web.facebook.com/" target="_self" rel="external">Ir para o facebook </a>usando _self</p>
+
+    <p><a href="https://web.facebook.com/" target="_parent" rel="external">Ir para o facebook </a>usando _parent</p>
+
+    <p><a href="https://web.facebook.com/" target="_top" rel="external">Ir para o facebook </a>usando _top</p>
+
+
+    <p>adicionamos um target="blank", isso significa que o link será aberto em uma nova guia, ou pagina em branco, sem fechar o de origem, vejamos todas:</p>
+    
+    <p>vamos fazer o teste abrindo o <a href="https://web.facebook.com/" target="_top">facebook</a> usando _top</p>
+    <ul>
+        <li><abbr title="abrir o link em uma nova janela em branco">_blank</abbr></li>
+        <li><abbr title="abrir o link na jaela atual">_self </abbr></li>
+        <li><abbr title="vai desfazer todos os frames e abrir no navegador por completo">_top</abbr></li>
+        <li><abbr title="parecido com top fazendo referencia a janela mae">_parent</abbr></li>
+    </ul>
+
+    <h2>Devemos indicar para qual site ou de quem pertence o link que estamos indicando atraves de:</h2>
+
+    <ul>
+        <li>next- o link é proxima parte do documento</li>
+        <li>prev- o link é parte anterior do documento</li>
+        <li>author- o link é de outra pessoa que escreveu o site</li>
+        <li>external- o link faz parte de outro site que não faz parte do atual</li>
+        <li>nofollow- indica que o link é um site pago</li>
+    </ul>
+
+    <p>como fizemos nos links acima através do rel.<br>
+    agora sabemos o que são <strong>links iternos</strong> e <strong>links externos</strong></p>
+    <hr>
+
+    <h2>Fazendo Download</h2>
+    <p>para criar um link para alguem baixar um arquivo você deve inserir o arquivo, explicar o que esta sendo baixado e o tipo de arquivo, veja:</p>
+
+    <ul>
+        <li>
+            <p>Baixe um exemplar do <a href="cronograma.zip" download="cronograma.zip" type="aplication/pdf">Cronograma de estudos</a></p> <!--O type do arquivo você pode encontrar em ianna.org/-->
+        </li>
+    </ul>
+    
+</body>
+</html>

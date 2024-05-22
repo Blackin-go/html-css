@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(170, 170, 170);
+}
+
+header {
+    background-color: blueviolet;
+    inline-size: 100vw;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    padding-block-start: 20px;
+    padding-bottom: 10px;
+}
+
+main {
+    margin: auto auto auto auto;
+    padding: 10px 0px 0px 0px;
+    background-color: blueviolet;
+    inline-size: 500px;
+    block-size: 50vh;
+    padding: 10px;
+    text-align: start;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-weight: 600;
+    margin: 15px;
+
+}
+
+li:hover {
+    background-color: rgb(170, 105, 255);
+    color: blueviolet;
+    padding: 2px;
+    border-radius: 5px;
+    text-transform: lowercase;
+
+}
+
+ul, li {
+    padding: 3px;
+    list-style-type: none;
+}
+
+#itens {
+    display: none;
+}
+
+#burg {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    max-width: 515px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#burg:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

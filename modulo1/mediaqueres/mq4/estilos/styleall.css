@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Configuração tela TABLET */
+@media screen and (min-width: 600px) {
+
+    main {
+        width: 700px;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    #burg {
+        display: none;
+    }
+
+    menu {
+        display: inline-block;
+        text-align: left;
+        
+    }
+
+    li {
+        text-align: left;
+        display: inline-block;
+        background-color: rgb(185, 110, 255);
+    }
+
+    header {
+        text-align: left;
+        display: inline-block;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    
+}

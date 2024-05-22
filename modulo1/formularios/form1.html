@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de estudos formulário</title>
+    <style>
+        * {
+            margin: 3px;
+            padding: 2px;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php"  method="post" autocomplete="off" >
+         <!--FORM Tag de formulário--> 
+
+         <!--Para protegeros dados de forma padrão, o HTML usa o METHOD=GET, porém mais seguro que o get podemos usar o POST, mas ainda sim o seus dados não estão seguros.
+        O GET não é aconselhável para envio de arquivos, textos grandes e dados sesíveis-->
+
+        <!--ACTION é o atributo de ação quando o usuario enviar os dados indicando a direção desses dados, no caso para linguagem HP, sem esse atributo os dados são perdidios e não vao para nenhum lugar-->
+
+         <!--AUTOCOMPLETE para ativar ou desativar ajuda de preenchimento de dadoss-->
+
+        <p> 
+            <label for="inome" >nome:</label> <!-- LABEL serve para identificar e com qual caixa(input) o parâmetro está relacionado, neste caso, este label está relacionado com nome-->
+
+            <input type="text" name="nome" id="inome" placeholder="nome" autocomplete="username">
+        
+        </p>  <!--Neste parágrafo criamos um imput de preenchimento nome com identificadores name e id--->
+
+        <p> 
+            <label for="isobrenome">sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome" size="10" placeholder="sobrenome" >
+
+            <!--SIZE é o tamanho da caixa e quantas palavras você pderá ver até o limite-->
+
+            <!--Para linguagem em PHP e demais o NAME funciona melhor, para JAVASCRIPT o ID funciona melhor-->
+
+        </p>
+
+        <p>
+             <label for="isenha">senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha" autocomplete="new-password">
+
+            <!--PlACEHOLDAER mostra o que é exigido no preenchimento da caixa-->
+
+            <!--REQUIRED sigifica que este campo é obrigatório ser preenchido-->
+    
+        </p>
+    
+        <p> 
+            <label for="iemail">email: </label>
+        <input type="email" name="email" id="imail" minlength="7" maxlength="17" placeholder="email">
+
+        <!--MINLENGTH significa que é necessário no mínimo uma certa quantidade de letras, no caso 7 letras, e MAXLENGTH é o máximo de letras que pode ser inserido-->
+    
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p> <!--Neste parágrafo criamos um input de enviar, que tem apenas um atributo que é o value, que nomeia o botão-->
+    </form><br>
+
+    <h1>Formulário 2</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        
+        <p>
+            <label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome" required>
+        </p>
+
+        <p>
+            <label for="isenha" >senha:</label>
+            <input type="password" name="senha" id="isenha" required>
+        </p>
+
+        <p>
+            <label for="inumber">número</label>
+            <input type="number" name="number" id="inumber" min="0" max="10" placeholder="0 a 10" step="1" step="0.1" value="5">
+        </p>
+
+        <p>
+            <label for="idata">mês:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="ihora">horário</label>
+            <input type="time" name="" id="">
+        </p>
+
+        <p>
+            <label for="iemail">email:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+
+        <p>
+            <label for="ilink">link</label>
+            <input type="url" name="link" id="ilink" required>
+        </p>
+
+        <p>
+            <label for="iimage">imagem</label>
+            <input type="image" src="/modulo1/imagens-audios-videos/imagens/300px.png" alt="imagem">
+        </p>
+
+        <p>
+            <label for="ipesquisa">pesquisa</label>
+            <input type="search" name="pesquisa" id="ipesquisa">
+        </p>
+
+        <p>
+            <input type="button" value="botão">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        
+
+    </form><br>
+
+    <h1>Formulario telefone e email</h1>
+
+    <form action="#" method="get" autocomplete="off" >
+
+        <fieldset> <!--FIELDSET para criar um campo em volta fdo formulário-->
+            
+            <legend>formulário</legend> <!--Legenda da caixa-->
+        <p>
+
+            <label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome" required>
+        </p>
+        <p>
+            <label for="iemail">email:</label>
+            <input type="email" name="" id="iemail" required autocomplete="email">
+        </p>
+        <p>
+            <label for="itel">telefone:</label>
+            <input type="tel" name="" id="itel" pattern="^\(d{2}\d{4,5}-\d{4}$)" autocomplete="tel-local" required>
+            <!--Estsudar Regxtx-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </fieldset>
+    </form><br>
+
+    <h2>Checkbox e Radio Buttom</h2>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Sexos</legend>
+
+                <label for="imas"><input type="radio" name="sexo" id="imas" value="M">Masculino</label>
+                <label for="ifem"><input type="radio" name="sexo" id="ifem" value="F">Feminino</label>
+           
+        </fieldset>
+        <fieldset>
+
+            <legend>Esportes favoritos</legend>
+
+            <label for="ibas"><input type="checkbox" name="bas" id="ibas" checked >Basquete <br></label> <!-- CHEKCKED para deixar uma opção já marcada-->
+
+            <label for="ifut"><input type="checkbox" name="fut" id="ifut">futebol <br></label>
+            <label for="icor"><input type="checkbox" name="cor" id="icor">corrida <br></label>
+            <label for="icar"><input type="checkbox" name="car" id="icar">carros <br></label>
+            <label for="imot"><input type="checkbox" name="mot" id="imot">motos <br></label>
+            <!--CHECKBOX são blocos para selecionar-->
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+    </form>
+
+    <h2>Inserindo cores</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Cor</legend>
+            
+            <p>
+                <label for="icor">cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+
+            <p>
+                <label for="inivel">Nivel de satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="2" max="10" oninput="ival.innerHTML = Number(inivel.value)">
+                <output id="ival">5</output>
+            </p>
+
+            <p>
+                <label for="ifoto">Foto</label>
+                <input type="file" name="foto" id="ifoto"> <!--TAg para enviar arquivos-->
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form><br>
+
+    <h2>Output em formulários</h2>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Outpt em formulário</legend>
+
+            <p>
+                <label for="inu1">Número1:</label>
+                <input type="number" name="nu1" id="inu1" min="0" max="50" required oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+            </p>
+
+            <p>
+                <label for="inu2">Número2:</label>
+                <input type="number" name="nu2" id="inu2" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

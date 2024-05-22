@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="11.css">
+    <title>Desafio do cordel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat+Brush&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 150px;
+            text-align: center;
+            padding: 40px 0px 0px 0px;
+        }
+
+        #titulo-principal {
+            padding-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5vw;
+        }
+
+        #paragrafo-principal {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        div.quadrado {
+            background-color: white;
+            color: black;
+            height: 400px;
+            max-width: 700px;
+            min-width: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        div#c2 {
+            background-image: url('./imagenscoredel/background001.jpg');
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+
+        }
+
+        div#c3 {
+            background-color: #00000083;
+            font-size: 1.25em;
+            height: 250px;
+            min-width: 250px;
+            max-width: 250px;
+            padding-top: 20px;
+            padding-left: 5px;
+            position: absolute;
+            top: 50px;
+        }
+
+        div#c5 {
+            background-image: url('imagenscoredel/background002.jpg');
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        div#c6 {
+            background-color: #000000cb;
+            font-size: 1.25em;
+            height: 250px;
+            min-width: 300px;
+            max-width: 300px;
+            padding-top: 20px;
+            padding-left: 5px;
+            position: absolute;
+            top: 50px;
+        }
+
+        #texto {
+            color: rgb(0, 0, 0);
+            font-family: 'Caveat Brush';  
+            font-weight: 500;
+            font-size: 25px;
+            padding-top: 60px;
+            padding-left: 10px;
+            text-align: justify;
+
+        }
+
+        #texto1 {
+            color: rgb(253, 253, 253);
+            font-family: 'Caveat Brush';  
+            font-weight: bold;
+            font-size: 25px;
+            padding-left: 10px;
+            text-align: justify;
+        }
+
+        #texto2 {
+            color: rgb(253, 253, 253);
+            font-family: 'Caveat Brush';  
+            font-weight: bold;
+            font-size: 25px;
+            padding-left: 10px;
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+        
+</head>
+<body>
+    <header>
+
+        <h1 id="titulo-principal">Cordel Moderno</h1>
+
+        <p id="paragrafo-principal">By Milton Duarte L</p>
+
+    </header>
+    <main>
+        <div class="quadrado" id="c1">
+
+                <p id="texto">
+                    Estou ficando cansado <br>
+                    Da tal tecnologia<br>
+                    Só se fala por e-mail<br>
+                    Mensagem curta e fria<br>
+                    Twitter e Facebook<br>
+                    Antes que eu caduque<br>
+                    Vou dizer tudo em poesia.<br>
+                </p>
+
+        </div>    
+        <div class="quadrado" id="c2">
+            <div  class="quadrado" id="c3">
+                <p id="texto1">
+                    Não é mais como era antes<br>
+                    É tudo abreviado<br>
+                    "Você" só tem duas letras<br>
+                    O "O" e o "E" foi riscado<br>
+                    Para declarar o amor<br>
+                    Basta botar uma flor<br>
+                    E um coração desenhado.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="quadrado" id="c4">
+
+            <p id="texto">
+                Arroba agora não pesa<br>
+                É parte de um endereço<br>
+                Ponto final nem se usa<br>
+                Ou vai até no começo<br>
+                Agora é .com<br>
+                Se o saite é muito bom<br>
+                Ele vale um alto preço.<br>
+            </p>
+
+        </div>
+
+        <div class="quadrado" id="c5">
+            <div class="quadrado" id="c6">
+                <p id="texto2">
+                    Pra piorar a liguagem<br>
+                    O emoticom é um risco<br>
+                    Tem símbolo para tudo<br>
+                    Ponto e vírgula e um asterisco<br>
+                    Um beijo significa<br>
+                    Pra entender como fica<br>
+                    Decifre esse rabisco.<br>
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por IgorGooes</p>
+    </footer>
+</body>
+</html>

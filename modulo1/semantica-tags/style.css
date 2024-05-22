@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'amsterdam';
+    src: url(amasterdam.ttf.ttf) format('opentype'), url(amasterdam.ttf.ttf) format(truetype); 
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: #FCD1DE;
+    color: #5B0116;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "amsterdam";
+    color: #9c0024;
+    margin: auto  auto auto 20px;;
+}
+
+a {
+    color: #9c0024;
+    text-decoration: none;
+    padding: 5px;
+    padding-inline-start: 15px;
+}
+
+a:hover {
+    color: #ffbccc;
+    background-color: #9c0024;
+    border: 2px;
+}
+
+header {
+    margin: auto;
+}
+
+main {
+
+}
+

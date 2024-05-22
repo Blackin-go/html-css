@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            inline-size: 400px;
+            border-collapse: separate;
+        }
+
+        td {
+            border: 1px solid black;  
+            block-size: 15px;   
+            padding: 8px;
+            text-align: center;  
+        }
+
+        td:hover {
+            background-color: rgb(2, 123, 204);
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+            transition-duration: 0.5s;
+            
+        }
+
+        .dado7 {
+            background-color: rgb(157, 82, 228);
+        }
+
+        .dado1:hover {
+            background-color: rgb(188, 116, 255);
+        }
+
+        .dado2:hover {
+            background-color: rgb(21, 181, 255);
+        }
+
+        .dado3:hover {
+            background-color: rgb(226, 43, 43);
+        }
+
+        .dado4:hover {
+            background-color: rgb(226, 43, 89);
+        }
+
+        .dado5:hover {
+            background-color: rgb(43, 226, 58);
+        }
+
+        .dado6:hover {
+            background-color: rgb(226, 223, 43);
+        }
+
+        .dado7:hover {
+            background-color: rgb(90, 19, 182);
+        }
+
+        .dado8:hover {
+            background-color: rgb(44, 161, 142);
+        }
+
+        .dado9:hover {
+            background-color: rgb(43, 189, 226);
+        }
+
+        .dado10:hover {
+            background-color: blueviolet;
+        }
+
+        .linha3 {
+            background-color: rgb(12, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha primeira tabela</h1>
+    </header>
+    <!-- Hierarquia de tabelas simples
+
+        <table> (tabela)
+
+            <Table How> ( linha de tabela )
+
+                <Table Header> ( cabeçalho de tabela)
+
+                    <Table Data> ( dados da tabela )-->
+
+    <table> <!--Tabela-->
+
+        <tr> <!--Cabeça da tabela--> 
+            <!-- linha 1-->
+
+            <td class="dado1">A1</td>  <!--Dados da tabela-->
+            <td class="dado2">B1</td>
+            <td class="dado3">C1</td>
+        </tr>
+        <tr><!--Linha 2-->
+
+            <td class="dado4">A2</td>
+            <td class="dado5">B2</td>
+            <td class="dado6">C2</td>
+
+        </tr><!--linha 3-->
+
+        <tr class="linha3">
+            <td class="dado7">A3</td>
+            <td class="dado8">B3</td>
+            <td class="dado9">C3</td>
+        </tr>
+
+        <tr> <!--Linha 4-->
+
+            <td class="dado10">A4</td>
+            <td class="dado7">B4</td>
+            <td class="dado7">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
